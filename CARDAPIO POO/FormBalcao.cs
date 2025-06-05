@@ -19,7 +19,7 @@ namespace CARDAPIO_POO
 
         }
 
-        private void AtualizarListViewPedidos()            
+        private void AtualizarListViewPedidos()
         {
             foreach (var pedido in Repositorio.listaPedidos)
             {
@@ -29,16 +29,16 @@ namespace CARDAPIO_POO
                     item.SubItems.Add(pedido.status.ToString());
                     item.SubItems.Add(pedido.date.ToString("dd/MM/yyyy HH:mm"));
                     item.Tag = pedido;
-                    listViewPedidos.Items.Add(item);    
+                    listViewPedidos.Items.Add(item);
                 }
             }
         }
 
         private void atualizarListViewFinalizados()
         {
-            foreach(var pedido in Repositorio.listaPedidos)
+            foreach (var pedido in Repositorio.listaPedidos)
             {
-                if(pedido.status == Pedido.statusPedido.Finalizado)
+                if (pedido.status == Pedido.statusPedido.Finalizado)
                 {
                     ListViewItem item = new ListViewItem(pedido.Nome);
                     item.SubItems.Add(pedido.status.ToString());
@@ -51,7 +51,7 @@ namespace CARDAPIO_POO
 
         private void FormBalcao_Load(object sender, EventArgs e)
         {
-            listViewPedidos.View  = View.Details;
+            listViewPedidos.View = View.Details;
             listViewPedidos.Columns.Add("Cliente", 150);
             listViewPedidos.Columns.Add("Status", 100);
             listViewPedidos.Columns.Add("Data", 150);
@@ -72,7 +72,7 @@ namespace CARDAPIO_POO
                 return;
             }
 
-            
+
             ListViewItem itemSelecionado = listViewPedidos.SelectedItems[0];
             Pedido pedidoSelecionado = (Pedido)itemSelecionado.Tag;
 
@@ -132,6 +132,11 @@ namespace CARDAPIO_POO
         }
 
         private void listViewFinalizados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

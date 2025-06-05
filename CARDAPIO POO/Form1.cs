@@ -1,6 +1,7 @@
 using static CARDAPIO_POO.Pedido;
 
 namespace CARDAPIO_POO;
+
 public partial class Form1 : Form
 {
 
@@ -19,6 +20,7 @@ public partial class Form1 : Form
     {
         comboBoxFormaPagamento.Items.AddRange(new string[] { "Dinheiro", "Cartão de Débito", "Cartão de Crédito", "Pix", "Vale Alimentação" });
         comboBoxFormaPagamento.SelectedIndex = 3;
+        quantidadeTxt.Text = "1";
 
         var produtos = new List<Produto>
     {
@@ -124,7 +126,8 @@ public partial class Form1 : Form
         produtoSelecionadoDoCardapio.Quantidade -= quantidadeDesejada;
         itemSelecionadoCardapio.SubItems[2].Text = produtoSelecionadoDoCardapio.Quantidade.ToString();
 
-        quantidadeTxt.Clear();
+        quantidadeTxt.Text = "1";
+
     }
     private void removerBtn_Click(object sender, EventArgs e)
     {
@@ -250,6 +253,7 @@ public partial class Form1 : Form
 
     private void LimparCampos()
     {
+
         total = 0;
         totalTxt.Text = "Seu total é R$ 0,00";
         listViewCarrinho.Items.Clear();
@@ -257,7 +261,7 @@ public partial class Form1 : Form
         Troco.Text = "R$ 0,00";
         nomeTxt.Clear();
         nomeDoCliente = "";
-        quantidadeTxt.Clear();
+        quantidadeTxt.Text = "1";
         comboBoxFormaPagamento.SelectedIndex = 3;
     }
 
