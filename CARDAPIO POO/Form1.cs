@@ -20,7 +20,7 @@ public partial class Form1 : Form
     {
         comboBoxFormaPagamento.Items.AddRange(new string[] { "Dinheiro", "Cartão de Débito", "Cartão de Crédito", "Pix", "Vale Alimentação" });
         comboBoxFormaPagamento.SelectedIndex = 3;
-        quantidadeTxt.Text = "1";
+        quantidadeTxt.Text = "";
 
         var produtos = new List<Produto>
     {
@@ -126,7 +126,7 @@ public partial class Form1 : Form
         produtoSelecionadoDoCardapio.Quantidade -= quantidadeDesejada;
         itemSelecionadoCardapio.SubItems[2].Text = produtoSelecionadoDoCardapio.Quantidade.ToString();
 
-        quantidadeTxt.Text = "1";
+        quantidadeTxt.Text = "";
 
     }
     private void removerBtn_Click(object sender, EventArgs e)
@@ -147,6 +147,9 @@ public partial class Form1 : Form
         itemCarrinhoSelecionado.ProdutoAdicionado.Quantidade += itemCarrinhoSelecionado.QuantidadeNoCarrinho;
 
         listViewCarrinho.Items.Remove(itemSelecionadoCarrinhoLVI);
+        produtos1.Remove(itemCarrinhoSelecionado);
+        
+
 
         foreach (ListViewItem lviCardapio in listViewCardapio.Items)
         {
@@ -261,7 +264,7 @@ public partial class Form1 : Form
         Troco.Text = "R$ 0,00";
         nomeTxt.Clear();
         nomeDoCliente = "";
-        quantidadeTxt.Text = "1";
+        quantidadeTxt.Text = "";
         comboBoxFormaPagamento.SelectedIndex = 3;
     }
 
@@ -374,6 +377,11 @@ public partial class Form1 : Form
     }
 
     private void listViewCardapio_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void listViewCarrinho_SelectedIndexChanged(object sender, EventArgs e)
     {
 
     }

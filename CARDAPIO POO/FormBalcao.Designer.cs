@@ -32,77 +32,119 @@
             btnMarcarConcluido = new Button();
             btnVerDetalhes = new Button();
             listViewPedidos = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
             listViewFinalizados = new ListView();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // btnMarcarConcluido
             // 
+            btnMarcarConcluido.BackColor = Color.FromArgb(120, 118, 100);
             btnMarcarConcluido.BackgroundImage = (Image)resources.GetObject("btnMarcarConcluido.BackgroundImage");
             btnMarcarConcluido.BackgroundImageLayout = ImageLayout.Stretch;
             btnMarcarConcluido.FlatAppearance.BorderSize = 0;
-            btnMarcarConcluido.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
-            btnMarcarConcluido.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
+            btnMarcarConcluido.FlatAppearance.MouseDownBackColor = Color.FromArgb(120, 118, 100);
+            btnMarcarConcluido.FlatAppearance.MouseOverBackColor = Color.FromArgb(120, 118, 100);
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(132, 509);
+            btnMarcarConcluido.Location = new Point(72, 570);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(194, 98);
             btnMarcarConcluido.TabIndex = 2;
             btnMarcarConcluido.Text = "Marcar como concluido";
-            btnMarcarConcluido.UseVisualStyleBackColor = true;
+            btnMarcarConcluido.UseVisualStyleBackColor = false;
             btnMarcarConcluido.Click += btnMarcarConcluido_Click;
             // 
             // btnVerDetalhes
             // 
+            btnVerDetalhes.BackColor = Color.FromArgb(120, 118, 100);
             btnVerDetalhes.BackgroundImage = (Image)resources.GetObject("btnVerDetalhes.BackgroundImage");
             btnVerDetalhes.BackgroundImageLayout = ImageLayout.Stretch;
             btnVerDetalhes.FlatAppearance.BorderSize = 0;
-            btnVerDetalhes.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
-            btnVerDetalhes.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
+            btnVerDetalhes.FlatAppearance.MouseDownBackColor = Color.FromArgb(120, 118, 100);
+            btnVerDetalhes.FlatAppearance.MouseOverBackColor = Color.FromArgb(120, 118, 100);
             btnVerDetalhes.FlatStyle = FlatStyle.Flat;
             btnVerDetalhes.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnVerDetalhes.ForeColor = Color.White;
-            btnVerDetalhes.Location = new Point(332, 509);
+            btnVerDetalhes.Location = new Point(272, 570);
             btnVerDetalhes.Name = "btnVerDetalhes";
             btnVerDetalhes.Size = new Size(194, 98);
             btnVerDetalhes.TabIndex = 3;
             btnVerDetalhes.Text = "Exibir detalhes";
-            btnVerDetalhes.UseVisualStyleBackColor = true;
+            btnVerDetalhes.UseVisualStyleBackColor = false;
             btnVerDetalhes.Click += btnVerDetalhes_Click;
             // 
             // listViewPedidos
             // 
             listViewPedidos.BackColor = Color.FromArgb(202, 196, 183);
+            listViewPedidos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
             listViewPedidos.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewPedidos.ForeColor = SystemColors.WindowText;
             listViewPedidos.FullRowSelect = true;
             listViewPedidos.GridLines = true;
-            listViewPedidos.Location = new Point(108, 102);
+            listViewPedidos.Location = new Point(28, 125);
             listViewPedidos.Name = "listViewPedidos";
-            listViewPedidos.Size = new Size(410, 391);
+            listViewPedidos.Size = new Size(584, 391);
             listViewPedidos.TabIndex = 4;
             listViewPedidos.UseCompatibleStateImageBehavior = false;
             listViewPedidos.View = View.Details;
             listViewPedidos.SelectedIndexChanged += listViewPedidos_SelectedIndexChanged;
             // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Cliente";
+            columnHeader1.Width = 150;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Status";
+            columnHeader2.Width = 150;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Data e Hora";
+            columnHeader3.Width = 280;
+            // 
             // listViewFinalizados
             // 
             listViewFinalizados.BackColor = Color.FromArgb(202, 196, 183);
+            listViewFinalizados.Columns.AddRange(new ColumnHeader[] { columnHeader4, columnHeader5, columnHeader6 });
             listViewFinalizados.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewFinalizados.FullRowSelect = true;
             listViewFinalizados.GridLines = true;
-            listViewFinalizados.Location = new Point(625, 102);
+            listViewFinalizados.Location = new Point(695, 125);
             listViewFinalizados.Name = "listViewFinalizados";
-            listViewFinalizados.Size = new Size(409, 391);
+            listViewFinalizados.Size = new Size(585, 391);
             listViewFinalizados.TabIndex = 5;
             listViewFinalizados.UseCompatibleStateImageBehavior = false;
             listViewFinalizados.View = View.Details;
             listViewFinalizados.SelectedIndexChanged += listViewFinalizados_SelectedIndexChanged;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "Cliente";
+            columnHeader4.Width = 150;
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Status";
+            columnHeader5.Width = 150;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Data e Hora";
+            columnHeader6.Width = 280;
             // 
             // pictureBox1
             // 
@@ -118,10 +160,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Agrandir Narrow", 20.25F, FontStyle.Bold);
-            label1.Location = new Point(174, 52);
+            label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label1.Location = new Point(179, 69);
             label1.Name = "label1";
-            label1.Size = new Size(271, 36);
+            label1.Size = new Size(264, 36);
             label1.TabIndex = 28;
             label1.Text = "HIstorico de pedidos";
             label1.Click += label1_Click;
@@ -129,19 +171,28 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Agrandir Narrow", 20.25F, FontStyle.Bold);
-            label2.Location = new Point(722, 52);
+            label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label2.Location = new Point(851, 69);
             label2.Name = "label2";
-            label2.Size = new Size(244, 36);
+            label2.Size = new Size(243, 36);
             label2.TabIndex = 29;
             label2.Text = "Pedidos Entregues";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.FromArgb(120, 118, 100);
+            pictureBox2.Location = new Point(28, 540);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(467, 161);
+            pictureBox2.TabIndex = 30;
+            pictureBox2.TabStop = false;
             // 
             // FormBalcao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
-            ClientSize = new Size(1330, 663);
+            ClientSize = new Size(1330, 724);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -149,10 +200,12 @@
             Controls.Add(listViewPedidos);
             Controls.Add(btnVerDetalhes);
             Controls.Add(btnMarcarConcluido);
+            Controls.Add(pictureBox2);
             Name = "FormBalcao";
             Text = "FormBalcao";
             Load += FormBalcao_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,5 +218,12 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private PictureBox pictureBox2;
     }
 }

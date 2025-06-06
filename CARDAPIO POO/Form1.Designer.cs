@@ -79,10 +79,10 @@
             // cardapioTxt
             // 
             cardapioTxt.AutoSize = true;
-            cardapioTxt.Font = new Font("Agrandir Narrow", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cardapioTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cardapioTxt.Location = new Point(202, 38);
             cardapioTxt.Name = "cardapioTxt";
-            cardapioTxt.Size = new Size(131, 36);
+            cardapioTxt.Size = new Size(129, 36);
             cardapioTxt.TabIndex = 1;
             cardapioTxt.Text = "Cardápio";
             cardapioTxt.Click += cardapioTxt_Click;
@@ -147,10 +147,10 @@
             // pedidoTxt
             // 
             pedidoTxt.AutoSize = true;
-            pedidoTxt.Font = new Font("Agrandir Narrow", 20.25F, FontStyle.Bold);
+            pedidoTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             pedidoTxt.Location = new Point(1379, 38);
             pedidoTxt.Name = "pedidoTxt";
-            pedidoTxt.Size = new Size(99, 36);
+            pedidoTxt.Size = new Size(97, 36);
             pedidoTxt.TabIndex = 7;
             pedidoTxt.Text = "Pedido";
             // 
@@ -189,7 +189,7 @@
             // 
             // dinheiroRecebidoTxt
             // 
-            dinheiroRecebidoTxt.ForeColor = Color.White;
+            dinheiroRecebidoTxt.ForeColor = Color.Black;
             dinheiroRecebidoTxt.Location = new Point(877, 306);
             dinheiroRecebidoTxt.Name = "dinheiroRecebidoTxt";
             dinheiroRecebidoTxt.Size = new Size(134, 23);
@@ -227,7 +227,7 @@
             Troco.AutoSize = true;
             Troco.BackColor = Color.White;
             Troco.Font = new Font("Segoe UI", 13F);
-            Troco.ForeColor = Color.White;
+            Troco.ForeColor = Color.Black;
             Troco.Location = new Point(877, 370);
             Troco.Name = "Troco";
             Troco.Size = new Size(131, 25);
@@ -303,13 +303,14 @@
             listViewCarrinho.ForeColor = Color.Black;
             listViewCarrinho.FullRowSelect = true;
             listViewCarrinho.GridLines = true;
-            listViewCarrinho.Location = new Point(1144, 77);
+            listViewCarrinho.Location = new Point(1158, 77);
             listViewCarrinho.MultiSelect = false;
             listViewCarrinho.Name = "listViewCarrinho";
             listViewCarrinho.Size = new Size(533, 501);
             listViewCarrinho.TabIndex = 23;
             listViewCarrinho.UseCompatibleStateImageBehavior = false;
             listViewCarrinho.View = View.Details;
+            listViewCarrinho.SelectedIndexChanged += listViewCarrinho_SelectedIndexChanged;
             // 
             // columnHeader5
             // 
@@ -377,7 +378,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(756, 646);
+            button1.Location = new Point(756, 655);
             button1.Name = "button1";
             button1.Size = new Size(185, 82);
             button1.TabIndex = 28;
@@ -403,11 +404,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.FromArgb(120, 118, 100);
-            label6.Font = new Font("Inter Medium", 20F, FontStyle.Bold);
+            label6.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(734, 140);
+            label6.Location = new Point(745, 125);
             label6.Name = "label6";
-            label6.Size = new Size(251, 33);
+            label6.Size = new Size(220, 36);
             label6.TabIndex = 31;
             label6.Text = "Dados do Cliente";
             // 

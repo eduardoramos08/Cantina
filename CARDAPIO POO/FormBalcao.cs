@@ -50,17 +50,7 @@ namespace CARDAPIO_POO
         }
 
         private void FormBalcao_Load(object sender, EventArgs e)
-        {
-            listViewPedidos.View = View.Details;
-            listViewPedidos.Columns.Add("Cliente", 150);
-            listViewPedidos.Columns.Add("Status", 100);
-            listViewPedidos.Columns.Add("Data", 150);
-
-            listViewFinalizados.View = View.Details;
-            listViewFinalizados.Columns.Add("Cliente", 150);
-            listViewFinalizados.Columns.Add("Status", 100);
-            listViewFinalizados.Columns.Add("Data", 150);
-
+        {        
             AtualizarListViewPedidos();
         }
 
