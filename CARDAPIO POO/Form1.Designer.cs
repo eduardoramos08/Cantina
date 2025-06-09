@@ -71,20 +71,20 @@
             // totalTxt
             // 
             totalTxt.AutoSize = true;
-            totalTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            totalTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             totalTxt.Location = new Point(1158, 609);
             totalTxt.Name = "totalTxt";
-            totalTxt.Size = new Size(205, 36);
+            totalTxt.Size = new Size(227, 31);
             totalTxt.TabIndex = 0;
             totalTxt.Text = "Total do Pedido:";
             // 
             // cardapioTxt
             // 
             cardapioTxt.AutoSize = true;
-            cardapioTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            cardapioTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             cardapioTxt.Location = new Point(202, 38);
             cardapioTxt.Name = "cardapioTxt";
-            cardapioTxt.Size = new Size(129, 36);
+            cardapioTxt.Size = new Size(132, 31);
             cardapioTxt.TabIndex = 1;
             cardapioTxt.Text = "Cardápio";
             cardapioTxt.Click += cardapioTxt_Click;
@@ -149,10 +149,10 @@
             // pedidoTxt
             // 
             pedidoTxt.AutoSize = true;
-            pedidoTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            pedidoTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             pedidoTxt.Location = new Point(1379, 38);
             pedidoTxt.Name = "pedidoTxt";
-            pedidoTxt.Size = new Size(97, 36);
+            pedidoTxt.Size = new Size(104, 31);
             pedidoTxt.TabIndex = 7;
             pedidoTxt.Text = "Pedido";
             // 
@@ -410,11 +410,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.White;
-            label6.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label6.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
             label6.Location = new Point(745, 125);
             label6.Name = "label6";
-            label6.Size = new Size(220, 36);
+            label6.Size = new Size(238, 31);
             label6.TabIndex = 31;
             label6.Text = "Dados do Cliente";
             // 
@@ -447,9 +447,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(727, 657);
+            button2.Location = new Point(756, 722);
             button2.Name = "button2";
-            button2.Size = new Size(238, 222);
+            button2.Size = new Size(185, 82);
             button2.TabIndex = 34;
             button2.Text = "Tela da Cozinha";
             button2.UseVisualStyleBackColor = true;

@@ -42,7 +42,9 @@
             columnHeader6 = new ColumnHeader();
             label2 = new Label();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // listViewPedidosCozinha
@@ -86,7 +88,7 @@
             btnVerDetalhes.FlatStyle = FlatStyle.Flat;
             btnVerDetalhes.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnVerDetalhes.ForeColor = Color.White;
-            btnVerDetalhes.Location = new Point(353, 660);
+            btnVerDetalhes.Location = new Point(353, 625);
             btnVerDetalhes.Name = "btnVerDetalhes";
             btnVerDetalhes.Size = new Size(194, 98);
             btnVerDetalhes.TabIndex = 32;
@@ -105,7 +107,7 @@
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(153, 660);
+            btnMarcarConcluido.Location = new Point(153, 625);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(194, 98);
             btnMarcarConcluido.TabIndex = 31;
@@ -116,7 +118,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(109, 630);
+            pictureBox2.Location = new Point(109, 595);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(467, 161);
             pictureBox2.TabIndex = 33;
@@ -155,29 +157,41 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label2.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             label2.Location = new Point(919, 34);
             label2.Name = "label2";
-            label2.Size = new Size(243, 36);
+            label2.Size = new Size(260, 31);
             label2.TabIndex = 36;
             label2.Text = "Pedidos Entregues";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             label1.Location = new Point(247, 34);
             label1.Name = "label1";
-            label1.Size = new Size(264, 36);
+            label1.Size = new Size(282, 31);
             label1.TabIndex = 35;
             label1.Text = "HIstorico de pedidos";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.Captura_de_tela_2025_05_20_223613_removebg_preview;
+            pictureBox1.Location = new Point(1155, 662);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(174, 94);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 37;
+            pictureBox1.TabStop = false;
             // 
             // FormCozinha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
-            ClientSize = new Size(1404, 830);
+            ClientSize = new Size(1433, 780);
+            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(listViewFinalizadoCozinha);
@@ -189,6 +203,7 @@
             Text = "FormCozinha";
             Load += FormCozinha_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,5 +223,6 @@
         private ColumnHeader columnHeader6;
         private Label label2;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }
