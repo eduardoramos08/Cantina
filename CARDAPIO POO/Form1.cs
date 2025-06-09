@@ -24,18 +24,18 @@ public partial class Form1 : Form
 
         var produtos = new List<Produto>
     {
-        new Produto { Codigo = 1, Quantidade = 20, Descricao = "Pão de queijo ", Preco = 6, Custo = 4.00m },
-        new Produto { Codigo = 2, Quantidade = 30, Descricao = "Coxinha - ", Preco = 5, Custo = 2.5m },
-        new Produto { Codigo = 3, Quantidade = 30, Descricao = "Risole - ", Preco = 4, Custo = 2.5m },
-        new Produto { Codigo = 4, Quantidade = 30, Descricao = "Esfiha de calabresa - ", Preco = 4.00m, Custo = 2.5m },
-        new Produto { Codigo = 5, Quantidade = 2, Descricao = "Suco natural (300ml) - ", Preco = 4.00m, Custo = 2.00m },
-        new Produto { Codigo = 6, Quantidade = 5, Descricao = "Refrigerante Lata - ", Preco = 4.50m, Custo = 3.00m },
-        new Produto { Codigo = 7, Quantidade = 5, Descricao = "Àgua mineral(500ml) - ", Preco = 3.00m, Custo = 1.00m },
-        new Produto { Codigo = 8, Quantidade = 25, Descricao = "Pastel de carne - ", Preco = 6.00m, Custo = 4.00m },
-        new Produto { Codigo = 9, Quantidade = 35, Descricao = "Patel de queijo - ", Preco = 6.50m, Custo = 4.50m },
-        new Produto { Codigo = 10, Quantidade = 10, Descricao = "Hambúrguer simples", Preco = 8.00m, Custo = 5.00m },
-        new Produto { Codigo = 11, Quantidade = 12, Descricao = "Hambúrguer com queijo  ", Preco = 9.00m, Custo = 6.00m },
-        new Produto { Codigo = 12, Quantidade = 23, Descricao = "X - Tudo - ", Preco = 12.00m, Custo = 7.00m }};
+        new Produto { Codigo = 1, Quantidade = 20, Descricao = "Pão de queijo ", Preco = 6, Custo = 4.00m, IsChapa = false },
+        new Produto { Codigo = 2, Quantidade = 30, Descricao = "Coxinha - ", Preco = 5, Custo = 2.5m, IsChapa = false },
+        new Produto { Codigo = 3, Quantidade = 30, Descricao = "Risole - ", Preco = 4, Custo = 2.5m, IsChapa = false },
+        new Produto { Codigo = 4, Quantidade = 30, Descricao = "Esfiha de calabresa - ", Preco = 4.00m, Custo = 2.5m, IsChapa = false },
+        new Produto { Codigo = 5, Quantidade = 2, Descricao = "Suco natural (300ml) - ", Preco = 4.00m, Custo = 2.00m, IsChapa = false },
+        new Produto { Codigo = 6, Quantidade = 5, Descricao = "Refrigerante Lata - ", Preco = 4.50m, Custo = 3.00m, IsChapa = false },
+        new Produto { Codigo = 7, Quantidade = 5, Descricao = "Àgua mineral(500ml) - ", Preco = 3.00m, Custo = 1.00m, IsChapa = false },
+        new Produto { Codigo = 8, Quantidade = 25, Descricao = "Pastel de carne - ", Preco = 6.00m, Custo = 4.00m, IsChapa = true },
+        new Produto { Codigo = 9, Quantidade = 35, Descricao = "Pastel de queijo - ", Preco = 6.50m, Custo = 4.50m, IsChapa = true },
+        new Produto { Codigo = 10, Quantidade = 10, Descricao = "Hambúrguer simples", Preco = 8.00m, Custo = 5.00m, IsChapa = true },
+        new Produto { Codigo = 11, Quantidade = 12, Descricao = "Hambúrguer com queijo  ", Preco = 9.00m, Custo = 6.00m , IsChapa = true},
+        new Produto { Codigo = 12, Quantidade = 23, Descricao = "X - Tudo - ", Preco = 12.00m, Custo = 7.00m , IsChapa = true}};
 
         foreach (Produto p in produtos)
         {
@@ -241,9 +241,10 @@ public partial class Form1 : Form
             date = DateTime.Now,
             Total = total,
             status = btnViagem.Checked ?
-         (statusPedido)Enum.Parse(typeof(statusPedido), "Viagem") :
-         (statusPedido)Enum.Parse(typeof(statusPedido), "Preparando"),
+            (statusPedido)Enum.Parse(typeof(statusPedido), "Viagem") :
+            (statusPedido)Enum.Parse(typeof(statusPedido), "Preparando"),
             FormaPagamento = comboBoxFormaPagamento.SelectedItem.ToString()
+            
         };
 
         Repositorio.listaPedidos.Add(pedido);
@@ -393,5 +394,11 @@ public partial class Form1 : Form
     private void listViewCarrinho_SelectedIndexChanged(object sender, EventArgs e)
     {
 
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+        FormCozinha formCozinha = new FormCozinha();
+        formCozinha.ShowDialog();
     }
 }

@@ -23,7 +23,7 @@ namespace CARDAPIO_POO
         {
             foreach (var pedido in Repositorio.listaPedidos)
             {
-                if (pedido.status != Pedido.statusPedido.Finalizado)
+                
                 {
                     ListViewItem item = new ListViewItem(pedido.Nome);
                     item.SubItems.Add(pedido.status.ToString());
@@ -34,23 +34,9 @@ namespace CARDAPIO_POO
             }
         }
 
-        private void atualizarListViewFinalizados()
-        {
-            foreach (var pedido in Repositorio.listaPedidos)
-            {
-                if (pedido.status == Pedido.statusPedido.Finalizado)
-                {
-                    ListViewItem item = new ListViewItem(pedido.Nome);
-                    item.SubItems.Add(pedido.status.ToString());
-                    item.SubItems.Add(pedido.date.ToString("dd/MM/yyyy HH:mm"));
-                    item.Tag = pedido;
-                    listViewFinalizados.Items.Add(item);
-                }
-            }
-        }
 
         private void FormBalcao_Load(object sender, EventArgs e)
-        {        
+        {
             AtualizarListViewPedidos();
         }
 
@@ -127,6 +113,11 @@ namespace CARDAPIO_POO
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

@@ -49,12 +49,12 @@
             // 
             // btnMarcarConcluido
             // 
-            btnMarcarConcluido.BackColor = Color.FromArgb(120, 118, 100);
+            btnMarcarConcluido.BackColor = Color.White;
             btnMarcarConcluido.BackgroundImage = (Image)resources.GetObject("btnMarcarConcluido.BackgroundImage");
             btnMarcarConcluido.BackgroundImageLayout = ImageLayout.Stretch;
             btnMarcarConcluido.FlatAppearance.BorderSize = 0;
-            btnMarcarConcluido.FlatAppearance.MouseDownBackColor = Color.FromArgb(120, 118, 100);
-            btnMarcarConcluido.FlatAppearance.MouseOverBackColor = Color.FromArgb(120, 118, 100);
+            btnMarcarConcluido.FlatAppearance.MouseDownBackColor = Color.White;
+            btnMarcarConcluido.FlatAppearance.MouseOverBackColor = Color.White;
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
@@ -68,12 +68,12 @@
             // 
             // btnVerDetalhes
             // 
-            btnVerDetalhes.BackColor = Color.FromArgb(120, 118, 100);
+            btnVerDetalhes.BackColor = Color.White;
             btnVerDetalhes.BackgroundImage = (Image)resources.GetObject("btnVerDetalhes.BackgroundImage");
             btnVerDetalhes.BackgroundImageLayout = ImageLayout.Stretch;
             btnVerDetalhes.FlatAppearance.BorderSize = 0;
-            btnVerDetalhes.FlatAppearance.MouseDownBackColor = Color.FromArgb(120, 118, 100);
-            btnVerDetalhes.FlatAppearance.MouseOverBackColor = Color.FromArgb(120, 118, 100);
+            btnVerDetalhes.FlatAppearance.MouseDownBackColor = Color.White;
+            btnVerDetalhes.FlatAppearance.MouseOverBackColor = Color.White;
             btnVerDetalhes.FlatStyle = FlatStyle.Flat;
             btnVerDetalhes.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnVerDetalhes.ForeColor = Color.White;
@@ -87,7 +87,7 @@
             // 
             // listViewPedidos
             // 
-            listViewPedidos.BackColor = Color.FromArgb(202, 196, 183);
+            listViewPedidos.BackColor = Color.White;
             listViewPedidos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
             listViewPedidos.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewPedidos.ForeColor = SystemColors.WindowText;
@@ -118,7 +118,7 @@
             // 
             // listViewFinalizados
             // 
-            listViewFinalizados.BackColor = Color.FromArgb(202, 196, 183);
+            listViewFinalizados.BackColor = Color.White;
             listViewFinalizados.Columns.AddRange(new ColumnHeader[] { columnHeader4, columnHeader5, columnHeader6 });
             listViewFinalizados.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewFinalizados.FullRowSelect = true;
@@ -150,7 +150,7 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.Captura_de_tela_2025_05_20_223613_removebg_preview;
-            pictureBox1.Location = new Point(957, 551);
+            pictureBox1.Location = new Point(1106, 570);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(174, 94);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -180,12 +180,13 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.FromArgb(120, 118, 100);
+            pictureBox2.BackColor = Color.White;
             pictureBox2.Location = new Point(28, 540);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(467, 161);
             pictureBox2.TabIndex = 30;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // FormBalcao
             // 
