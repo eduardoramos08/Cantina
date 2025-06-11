@@ -53,10 +53,10 @@
             listViewPedidosCozinha.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewPedidosCozinha.FullRowSelect = true;
             listViewPedidosCozinha.GridLines = true;
-            listViewPedidosCozinha.Location = new Point(109, 86);
+            listViewPedidosCozinha.Location = new Point(31, 86);
             listViewPedidosCozinha.MultiSelect = false;
             listViewPedidosCozinha.Name = "listViewPedidosCozinha";
-            listViewPedidosCozinha.Size = new Size(585, 493);
+            listViewPedidosCozinha.Size = new Size(666, 493);
             listViewPedidosCozinha.TabIndex = 0;
             listViewPedidosCozinha.UseCompatibleStateImageBehavior = false;
             listViewPedidosCozinha.View = View.Details;
@@ -70,7 +70,7 @@
             // columnHeader2
             // 
             columnHeader2.Text = "Status";
-            columnHeader2.Width = 150;
+            columnHeader2.Width = 230;
             // 
             // columnHeader3
             // 
@@ -133,7 +133,7 @@
             listViewFinalizadoCozinha.Location = new Point(744, 86);
             listViewFinalizadoCozinha.MultiSelect = false;
             listViewFinalizadoCozinha.Name = "listViewFinalizadoCozinha";
-            listViewFinalizadoCozinha.Size = new Size(585, 493);
+            listViewFinalizadoCozinha.Size = new Size(667, 493);
             listViewFinalizadoCozinha.TabIndex = 34;
             listViewFinalizadoCozinha.UseCompatibleStateImageBehavior = false;
             listViewFinalizadoCozinha.View = View.Details;
@@ -147,7 +147,7 @@
             // columnHeader5
             // 
             columnHeader5.Text = "Status";
-            columnHeader5.Width = 150;
+            columnHeader5.Width = 230;
             // 
             // columnHeader6
             // 
@@ -157,20 +157,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
+            label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             label2.Location = new Point(919, 34);
             label2.Name = "label2";
-            label2.Size = new Size(260, 31);
+            label2.Size = new Size(243, 36);
             label2.TabIndex = 36;
             label2.Text = "Pedidos Entregues";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
+            label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             label1.Location = new Point(247, 34);
             label1.Name = "label1";
-            label1.Size = new Size(282, 31);
+            label1.Size = new Size(264, 36);
             label1.TabIndex = 35;
             label1.Text = "HIstorico de pedidos";
             // 

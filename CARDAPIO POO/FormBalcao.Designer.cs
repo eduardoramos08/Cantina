@@ -95,7 +95,7 @@
             listViewPedidos.GridLines = true;
             listViewPedidos.Location = new Point(28, 125);
             listViewPedidos.Name = "listViewPedidos";
-            listViewPedidos.Size = new Size(584, 391);
+            listViewPedidos.Size = new Size(666, 391);
             listViewPedidos.TabIndex = 4;
             listViewPedidos.UseCompatibleStateImageBehavior = false;
             listViewPedidos.View = View.Details;
@@ -109,7 +109,7 @@
             // columnHeader2
             // 
             columnHeader2.Text = "Status";
-            columnHeader2.Width = 150;
+            columnHeader2.Width = 230;
             // 
             // columnHeader3
             // 
@@ -123,9 +123,9 @@
             listViewFinalizados.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewFinalizados.FullRowSelect = true;
             listViewFinalizados.GridLines = true;
-            listViewFinalizados.Location = new Point(695, 125);
+            listViewFinalizados.Location = new Point(746, 125);
             listViewFinalizados.Name = "listViewFinalizados";
-            listViewFinalizados.Size = new Size(585, 391);
+            listViewFinalizados.Size = new Size(665, 391);
             listViewFinalizados.TabIndex = 5;
             listViewFinalizados.UseCompatibleStateImageBehavior = false;
             listViewFinalizados.View = View.Details;
@@ -139,7 +139,7 @@
             // columnHeader5
             // 
             columnHeader5.Text = "Status";
-            columnHeader5.Width = 150;
+            columnHeader5.Width = 230;
             // 
             // columnHeader6
             // 
@@ -193,7 +193,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
-            ClientSize = new Size(1330, 724);
+            ClientSize = new Size(1435, 724);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);

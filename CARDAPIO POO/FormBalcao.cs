@@ -19,11 +19,16 @@ namespace CARDAPIO_POO
 
         }
 
-        private void AtualizarListViewPedidos()
+        
+            
+        
+
+
+        private void FormBalcao_Load(object sender, EventArgs e)
         {
             foreach (var pedido in Repositorio.listaPedidos)
             {
-                
+
                 {
                     ListViewItem item = new ListViewItem(pedido.Nome);
                     item.SubItems.Add(pedido.status.ToString());
@@ -32,12 +37,6 @@ namespace CARDAPIO_POO
                     listViewPedidos.Items.Add(item);
                 }
             }
-        }
-
-
-        private void FormBalcao_Load(object sender, EventArgs e)
-        {
-            AtualizarListViewPedidos();
         }
 
         private void btnMarcarConcluido_Click(object sender, EventArgs e)
@@ -54,7 +53,7 @@ namespace CARDAPIO_POO
 
             pedidoSelecionado.status = Pedido.statusPedido.Finalizado;
 
-            listViewPedidos.Items.Remove(itemSelecionado);
+            
 
             ListViewItem itemFinalizado = new ListViewItem(pedidoSelecionado.Nome);
             itemFinalizado.SubItems.Add(pedidoSelecionado.status.ToString());

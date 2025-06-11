@@ -12,25 +12,6 @@ namespace CARDAPIO_POO
 {
     public partial class FormCozinha : Form
     {
-        private void AtualizarListViewPedidosCozinha()
-        {
-            foreach (var pedido in Repositorio.listaPedidos)
-            {
-                if (pedido.status != Pedido.statusPedido.Preparando && pedido.status != Pedido.statusPedido.Viagem)
-                    continue;
-
-                bool temItemDaChapa = pedido.carrinho.Any(item => item.ProdutoAdicionado.IsChapa);
-
-                if (temItemDaChapa)
-                {
-                    ListViewItem lvi = new ListViewItem(pedido.Nome);
-                    lvi.SubItems.Add(pedido.status.ToString());
-                    lvi.SubItems.Add(pedido.date.ToString("HH:mm:ss"));
-                    lvi.Tag = pedido; 
-                    listViewPedidosCozinha.Items.Add(lvi);
-                }
-            }
-        }
         public FormCozinha()
         {
             InitializeComponent();
@@ -48,9 +29,8 @@ namespace CARDAPIO_POO
             ListViewItem itemSelecionado = listViewPedidosCozinha.SelectedItems[0];
             Pedido pedidoSelecionado = (Pedido)itemSelecionado.Tag;
 
-            pedidoSelecionado.status = Pedido.statusPedido.Finalizado;
+            pedidoSelecionado.status = Pedido.statusPedido.Cozinha_Finalizou;
 
-            listViewPedidosCozinha.Items.Remove(itemSelecionado);
 
             ListViewItem itemFinalizado = new ListViewItem(pedidoSelecionado.Nome);
             itemFinalizado.SubItems.Add(pedidoSelecionado.status.ToString());
@@ -112,7 +92,23 @@ namespace CARDAPIO_POO
 
         private void FormCozinha_Load(object sender, EventArgs e)
         {
-            AtualizarListViewPedidosCozinha();
+            foreach (var pedido in Repositorio.listaPedidos)
+            {
+                if (pedido.status != Pedido.statusPedido.Preparando && pedido.status != Pedido.statusPedido.Viagem)
+                    continue;
+
+                bool temItemDaChapa = pedido.carrinho.Any(item => item.ProdutoAdicionado.IsChapa);
+
+                if (temItemDaChapa)
+                {
+                    ListViewItem lvi = new ListViewItem(pedido.Nome);
+                    lvi.SubItems.Add(pedido.status.ToString());
+                    lvi.SubItems.Add(pedido.date.ToString("HH:mm:ss"));
+                    lvi.Tag = pedido;
+                    listViewPedidosCozinha.Items.Add(lvi);
+                }
+            }
+            
         }
     }
 }
