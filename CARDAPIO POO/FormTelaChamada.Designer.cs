@@ -114,7 +114,7 @@
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(170, 664);
+            btnMarcarConcluido.Location = new Point(276, 619);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(163, 79);
             btnMarcarConcluido.TabIndex = 8;
@@ -125,9 +125,9 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.White;
-            pictureBox1.Location = new Point(141, 631);
+            pictureBox1.Location = new Point(251, 600);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(208, 154);
+            pictureBox1.Size = new Size(208, 119);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
