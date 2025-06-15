@@ -244,7 +244,7 @@ public partial class Form1 : Form
             (statusPedido)Enum.Parse(typeof(statusPedido), "Viagem") :
             (statusPedido)Enum.Parse(typeof(statusPedido), "Preparando"),
             FormaPagamento = comboBoxFormaPagamento.SelectedItem.ToString()
-            
+
         };
 
         Repositorio.listaPedidos.Add(pedido);
@@ -400,5 +400,11 @@ public partial class Form1 : Form
     {
         FormCozinha formCozinha = new FormCozinha();
         formCozinha.ShowDialog();
+    }
+
+    private void btnTelaChamada_Click(object sender, EventArgs e)
+    {
+        FormTelaChamada formTelaChamada = new FormTelaChamada();
+        formTelaChamada.ShowDialog();
     }
 }

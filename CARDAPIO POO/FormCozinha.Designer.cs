@@ -53,7 +53,7 @@
             listViewPedidosCozinha.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewPedidosCozinha.FullRowSelect = true;
             listViewPedidosCozinha.GridLines = true;
-            listViewPedidosCozinha.Location = new Point(31, 86);
+            listViewPedidosCozinha.Location = new Point(1, 96);
             listViewPedidosCozinha.MultiSelect = false;
             listViewPedidosCozinha.Name = "listViewPedidosCozinha";
             listViewPedidosCozinha.Size = new Size(666, 493);

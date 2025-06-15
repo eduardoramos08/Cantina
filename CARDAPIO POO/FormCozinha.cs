@@ -17,6 +17,27 @@ namespace CARDAPIO_POO
             InitializeComponent();
         }
 
+        private void FormCozinha_Load(object sender, EventArgs e)
+        {
+            foreach (var pedido in Repositorio.listaPedidos)
+            {
+                if (pedido.status != Pedido.statusPedido.Preparando && pedido.status != Pedido.statusPedido.Viagem )
+                    continue;
+
+                bool ItemDaCozinha = pedido.carrinho.Any(item => item.ProdutoAdicionado.IsChapa);
+
+                if (ItemDaCozinha)
+                {
+                    ListViewItem lvi = new ListViewItem(pedido.Nome);
+                    lvi.SubItems.Add(pedido.status.ToString());
+                    lvi.SubItems.Add(pedido.date.ToString("HH:mm:ss"));
+                    lvi.Tag = pedido;
+                    listViewPedidosCozinha.Items.Add(lvi);
+                }
+            }
+
+        }
+
         private void btnMarcarConcluido_Click(object sender, EventArgs e)
         {
             if (listViewPedidosCozinha.SelectedItems.Count == 0)
@@ -25,12 +46,10 @@ namespace CARDAPIO_POO
                 return;
             }
 
-
             ListViewItem itemSelecionado = listViewPedidosCozinha.SelectedItems[0];
             Pedido pedidoSelecionado = (Pedido)itemSelecionado.Tag;
 
             pedidoSelecionado.status = Pedido.statusPedido.Cozinha_Finalizou;
-
 
             ListViewItem itemFinalizado = new ListViewItem(pedidoSelecionado.Nome);
             itemFinalizado.SubItems.Add(pedidoSelecionado.status.ToString());
@@ -39,9 +58,6 @@ namespace CARDAPIO_POO
 
             listViewFinalizadoCozinha.Items.Add(itemFinalizado);
         }
-
-
-
 
         private void listViewPedidosCozinha_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -88,27 +104,6 @@ namespace CARDAPIO_POO
         private void listViewFInalizadoCozinha_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void FormCozinha_Load(object sender, EventArgs e)
-        {
-            foreach (var pedido in Repositorio.listaPedidos)
-            {
-                if (pedido.status != Pedido.statusPedido.Preparando && pedido.status != Pedido.statusPedido.Viagem)
-                    continue;
-
-                bool temItemDaChapa = pedido.carrinho.Any(item => item.ProdutoAdicionado.IsChapa);
-
-                if (temItemDaChapa)
-                {
-                    ListViewItem lvi = new ListViewItem(pedido.Nome);
-                    lvi.SubItems.Add(pedido.status.ToString());
-                    lvi.SubItems.Add(pedido.date.ToString("HH:mm:ss"));
-                    lvi.Tag = pedido;
-                    listViewPedidosCozinha.Items.Add(lvi);
-                }
-            }
-            
         }
     }
 }

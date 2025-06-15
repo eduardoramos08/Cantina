@@ -181,3 +181,5 @@ F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO POO.genruntime
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\ref\CARDAPIO POO.dll
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormCozinha.resources
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormTelaChamada.resources
+F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormCozinha.resources
+F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormTelaChamada.resources

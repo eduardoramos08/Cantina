@@ -63,6 +63,7 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             button2 = new Button();
+            btnTelaChamada = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -455,6 +456,24 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // btnTelaChamada
+            // 
+            btnTelaChamada.BackgroundImage = (Image)resources.GetObject("btnTelaChamada.BackgroundImage");
+            btnTelaChamada.BackgroundImageLayout = ImageLayout.Stretch;
+            btnTelaChamada.FlatAppearance.BorderSize = 0;
+            btnTelaChamada.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
+            btnTelaChamada.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
+            btnTelaChamada.FlatStyle = FlatStyle.Flat;
+            btnTelaChamada.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            btnTelaChamada.ForeColor = Color.White;
+            btnTelaChamada.Location = new Point(947, 636);
+            btnTelaChamada.Name = "btnTelaChamada";
+            btnTelaChamada.Size = new Size(185, 82);
+            btnTelaChamada.TabIndex = 35;
+            btnTelaChamada.Text = "Tela de Chamada";
+            btnTelaChamada.UseVisualStyleBackColor = true;
+            btnTelaChamada.Click += btnTelaChamada_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -462,6 +481,7 @@
             BackColor = Color.FromArgb(243, 241, 238);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1703, 816);
+            Controls.Add(btnTelaChamada);
             Controls.Add(label6);
             Controls.Add(btnViagem);
             Controls.Add(pictureBox1);
@@ -536,5 +556,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Button button2;
+        private Button btnTelaChamada;
     }
 }
