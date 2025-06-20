@@ -42,9 +42,9 @@
             columnHeader6 = new ColumnHeader();
             label2 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // listViewPedidosCozinha
@@ -53,7 +53,7 @@
             listViewPedidosCozinha.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewPedidosCozinha.FullRowSelect = true;
             listViewPedidosCozinha.GridLines = true;
-            listViewPedidosCozinha.Location = new Point(1, 96);
+            listViewPedidosCozinha.Location = new Point(26, 205);
             listViewPedidosCozinha.MultiSelect = false;
             listViewPedidosCozinha.Name = "listViewPedidosCozinha";
             listViewPedidosCozinha.Size = new Size(666, 493);
@@ -88,7 +88,7 @@
             btnVerDetalhes.FlatStyle = FlatStyle.Flat;
             btnVerDetalhes.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnVerDetalhes.ForeColor = Color.White;
-            btnVerDetalhes.Location = new Point(353, 625);
+            btnVerDetalhes.Location = new Point(270, 736);
             btnVerDetalhes.Name = "btnVerDetalhes";
             btnVerDetalhes.Size = new Size(194, 98);
             btnVerDetalhes.TabIndex = 32;
@@ -107,7 +107,7 @@
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(153, 625);
+            btnMarcarConcluido.Location = new Point(70, 736);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(194, 98);
             btnMarcarConcluido.TabIndex = 31;
@@ -118,7 +118,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(109, 595);
+            pictureBox2.Location = new Point(26, 706);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(467, 161);
             pictureBox2.TabIndex = 33;
@@ -130,7 +130,7 @@
             listViewFinalizadoCozinha.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewFinalizadoCozinha.FullRowSelect = true;
             listViewFinalizadoCozinha.GridLines = true;
-            listViewFinalizadoCozinha.Location = new Point(744, 86);
+            listViewFinalizadoCozinha.Location = new Point(769, 195);
             listViewFinalizadoCozinha.MultiSelect = false;
             listViewFinalizadoCozinha.Name = "listViewFinalizadoCozinha";
             listViewFinalizadoCozinha.Size = new Size(667, 493);
@@ -158,7 +158,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label2.Location = new Point(919, 34);
+            label2.Location = new Point(982, 143);
             label2.Name = "label2";
             label2.Size = new Size(243, 36);
             label2.TabIndex = 36;
@@ -168,30 +168,30 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label1.Location = new Point(247, 34);
+            label1.Location = new Point(223, 143);
             label1.Name = "label1";
             label1.Size = new Size(264, 36);
             label1.TabIndex = 35;
             label1.Text = "HIstorico de pedidos";
             // 
-            // pictureBox1
+            // pictureBox4
             // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2025_05_20_223613_removebg_preview;
-            pictureBox1.Location = new Point(1155, 662);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 94);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 37;
-            pictureBox1.TabStop = false;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(26, 36);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(203, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 43;
+            pictureBox4.TabStop = false;
             // 
             // FormCozinha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
-            ClientSize = new Size(1433, 780);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(1433, 879);
+            Controls.Add(pictureBox4);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(listViewFinalizadoCozinha);
@@ -203,7 +203,7 @@
             Text = "FormCozinha";
             Load += FormCozinha_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -223,6 +223,6 @@
         private ColumnHeader columnHeader6;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
     }
 }

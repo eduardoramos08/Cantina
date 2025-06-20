@@ -56,7 +56,6 @@
             columnHeader8 = new ColumnHeader();
             comboBoxFormaPagamento = new ComboBox();
             label5 = new Label();
-            pictureBox1 = new PictureBox();
             button1 = new Button();
             btnViagem = new CheckBox();
             label6 = new Label();
@@ -65,28 +64,29 @@
             button2 = new Button();
             btnTelaChamada = new Button();
             button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // totalTxt
             // 
             totalTxt.AutoSize = true;
-            totalTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
-            totalTxt.Location = new Point(1158, 609);
+            totalTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalTxt.Location = new Point(1236, 694);
             totalTxt.Name = "totalTxt";
-            totalTxt.Size = new Size(227, 31);
+            totalTxt.Size = new Size(205, 36);
             totalTxt.TabIndex = 0;
             totalTxt.Text = "Total do Pedido:";
             // 
             // cardapioTxt
             // 
             cardapioTxt.AutoSize = true;
-            cardapioTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
-            cardapioTxt.Location = new Point(240, 38);
+            cardapioTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            cardapioTxt.Location = new Point(210, 123);
             cardapioTxt.Name = "cardapioTxt";
-            cardapioTxt.Size = new Size(132, 31);
+            cardapioTxt.Size = new Size(129, 36);
             cardapioTxt.TabIndex = 1;
             cardapioTxt.Text = "Cardápio";
             cardapioTxt.Click += cardapioTxt_Click;
@@ -102,7 +102,7 @@
             adicionarBtn.FlatStyle = FlatStyle.Flat;
             adicionarBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             adicionarBtn.ForeColor = Color.White;
-            adicionarBtn.Location = new Point(71, 684);
+            adicionarBtn.Location = new Point(66, 771);
             adicionarBtn.Name = "adicionarBtn";
             adicionarBtn.Size = new Size(185, 82);
             adicionarBtn.TabIndex = 2;
@@ -121,7 +121,7 @@
             removerBtn.FlatStyle = FlatStyle.Flat;
             removerBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             removerBtn.ForeColor = Color.White;
-            removerBtn.Location = new Point(262, 684);
+            removerBtn.Location = new Point(257, 771);
             removerBtn.Name = "removerBtn";
             removerBtn.Size = new Size(185, 82);
             removerBtn.TabIndex = 3;
@@ -140,7 +140,7 @@
             finalizarBtn.FlatStyle = FlatStyle.Flat;
             finalizarBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             finalizarBtn.ForeColor = Color.White;
-            finalizarBtn.Location = new Point(842, 479);
+            finalizarBtn.Location = new Point(845, 575);
             finalizarBtn.Name = "finalizarBtn";
             finalizarBtn.Size = new Size(185, 81);
             finalizarBtn.TabIndex = 4;
@@ -151,17 +151,17 @@
             // pedidoTxt
             // 
             pedidoTxt.AutoSize = true;
-            pedidoTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
-            pedidoTxt.Location = new Point(1494, 38);
+            pedidoTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            pedidoTxt.Location = new Point(1512, 123);
             pedidoTxt.Name = "pedidoTxt";
-            pedidoTxt.Size = new Size(104, 31);
+            pedidoTxt.Size = new Size(97, 36);
             pedidoTxt.TabIndex = 7;
             pedidoTxt.Text = "Pedido";
             // 
             // quantidadeTxt
             // 
             quantidadeTxt.BackColor = Color.Gainsboro;
-            quantidadeTxt.Location = new Point(246, 634);
+            quantidadeTxt.Location = new Point(219, 721);
             quantidadeTxt.Name = "quantidadeTxt";
             quantidadeTxt.Size = new Size(166, 23);
             quantidadeTxt.TabIndex = 9;
@@ -171,11 +171,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
+            label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(84, 632);
+            label2.Location = new Point(66, 708);
             label2.Name = "label2";
-            label2.Size = new Size(126, 25);
+            label2.Size = new Size(158, 36);
             label2.TabIndex = 11;
             label2.Text = "quantidade:";
             // 
@@ -184,7 +184,7 @@
             dateTimePicker1.CustomFormat = "";
             dateTimePicker1.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(1772, 772);
+            dateTimePicker1.Location = new Point(1662, 12);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(149, 32);
             dateTimePicker1.TabIndex = 14;
@@ -196,7 +196,7 @@
             // 
             dinheiroRecebidoTxt.BackColor = Color.Gainsboro;
             dinheiroRecebidoTxt.ForeColor = Color.Black;
-            dinheiroRecebidoTxt.Location = new Point(963, 306);
+            dinheiroRecebidoTxt.Location = new Point(963, 398);
             dinheiroRecebidoTxt.Name = "dinheiroRecebidoTxt";
             dinheiroRecebidoTxt.Size = new Size(134, 23);
             dinheiroRecebidoTxt.TabIndex = 15;
@@ -208,7 +208,7 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(790, 302);
+            label1.Location = new Point(793, 398);
             label1.Name = "label1";
             label1.Size = new Size(167, 24);
             label1.TabIndex = 16;
@@ -221,7 +221,7 @@
             label3.BackColor = Color.White;
             label3.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(879, 371);
+            label3.Location = new Point(882, 467);
             label3.Name = "label3";
             label3.Size = new Size(78, 24);
             label3.TabIndex = 17;
@@ -234,7 +234,7 @@
             Troco.BackColor = Color.Gainsboro;
             Troco.Font = new Font("Segoe UI", 13F);
             Troco.ForeColor = Color.Black;
-            Troco.Location = new Point(963, 370);
+            Troco.Location = new Point(966, 466);
             Troco.Name = "Troco";
             Troco.Size = new Size(131, 25);
             Troco.TabIndex = 19;
@@ -247,7 +247,7 @@
             label4.BackColor = Color.White;
             label4.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(879, 194);
+            label4.Location = new Point(882, 290);
             label4.Name = "label4";
             label4.Size = new Size(78, 24);
             label4.TabIndex = 20;
@@ -256,7 +256,7 @@
             // nomeTxt
             // 
             nomeTxt.BackColor = Color.Gainsboro;
-            nomeTxt.Location = new Point(963, 194);
+            nomeTxt.Location = new Point(966, 290);
             nomeTxt.Name = "nomeTxt";
             nomeTxt.Size = new Size(134, 23);
             nomeTxt.TabIndex = 21;
@@ -271,7 +271,7 @@
             listViewCardapio.FullRowSelect = true;
             listViewCardapio.GridLines = true;
             listViewCardapio.ImeMode = ImeMode.Off;
-            listViewCardapio.Location = new Point(26, 77);
+            listViewCardapio.Location = new Point(21, 173);
             listViewCardapio.MultiSelect = false;
             listViewCardapio.Name = "listViewCardapio";
             listViewCardapio.Size = new Size(605, 501);
@@ -310,7 +310,7 @@
             listViewCarrinho.ForeColor = Color.Black;
             listViewCarrinho.FullRowSelect = true;
             listViewCarrinho.GridLines = true;
-            listViewCarrinho.Location = new Point(1233, 77);
+            listViewCarrinho.Location = new Point(1236, 173);
             listViewCarrinho.MultiSelect = false;
             listViewCarrinho.Name = "listViewCarrinho";
             listViewCarrinho.Size = new Size(666, 501);
@@ -347,7 +347,7 @@
             comboBoxFormaPagamento.BackColor = Color.Gainsboro;
             comboBoxFormaPagamento.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxFormaPagamento.FormattingEnabled = true;
-            comboBoxFormaPagamento.Location = new Point(963, 249);
+            comboBoxFormaPagamento.Location = new Point(966, 345);
             comboBoxFormaPagamento.Name = "comboBoxFormaPagamento";
             comboBoxFormaPagamento.Size = new Size(134, 23);
             comboBoxFormaPagamento.TabIndex = 24;
@@ -359,22 +359,11 @@
             label5.BackColor = Color.White;
             label5.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(707, 245);
+            label5.Location = new Point(710, 341);
             label5.Name = "label5";
             label5.Size = new Size(250, 24);
             label5.TabIndex = 25;
             label5.Text = "Método de pagamento:";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2025_05_20_223613_removebg_preview;
-            pictureBox1.Location = new Point(1747, 672);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 94);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -386,7 +375,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(756, 634);
+            button1.Location = new Point(742, 707);
             button1.Name = "button1";
             button1.Size = new Size(185, 82);
             button1.TabIndex = 28;
@@ -400,7 +389,7 @@
             btnViagem.BackColor = Color.White;
             btnViagem.Font = new Font("Inter Medium", 20F, FontStyle.Bold);
             btnViagem.ForeColor = Color.Black;
-            btnViagem.Location = new Point(831, 418);
+            btnViagem.Location = new Point(834, 514);
             btnViagem.Name = "btnViagem";
             btnViagem.Size = new Size(207, 37);
             btnViagem.TabIndex = 29;
@@ -412,11 +401,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.White;
-            label6.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
+            label6.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(831, 125);
+            label6.Location = new Point(834, 221);
             label6.Name = "label6";
-            label6.Size = new Size(238, 31);
+            label6.Size = new Size(220, 36);
             label6.TabIndex = 31;
             label6.Text = "Dados do Cliente";
             // 
@@ -424,7 +413,7 @@
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(649, 77);
+            pictureBox3.Location = new Point(652, 173);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(548, 501);
             pictureBox3.TabIndex = 32;
@@ -433,7 +422,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(26, 607);
+            pictureBox2.Location = new Point(21, 694);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(459, 197);
             pictureBox2.TabIndex = 33;
@@ -449,7 +438,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(756, 722);
+            button2.Location = new Point(742, 795);
             button2.Name = "button2";
             button2.Size = new Size(185, 82);
             button2.TabIndex = 34;
@@ -467,7 +456,7 @@
             btnTelaChamada.FlatStyle = FlatStyle.Flat;
             btnTelaChamada.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnTelaChamada.ForeColor = Color.White;
-            btnTelaChamada.Location = new Point(947, 636);
+            btnTelaChamada.Location = new Point(933, 709);
             btnTelaChamada.Name = "btnTelaChamada";
             btnTelaChamada.Size = new Size(185, 82);
             btnTelaChamada.TabIndex = 35;
@@ -485,7 +474,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(947, 722);
+            button3.Location = new Point(933, 795);
             button3.Name = "button3";
             button3.Size = new Size(185, 82);
             button3.TabIndex = 36;
@@ -493,18 +482,29 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(21, 28);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(203, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 42;
+            pictureBox4.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1924, 816);
+            ClientSize = new Size(1924, 893);
+            Controls.Add(pictureBox4);
             Controls.Add(button3);
             Controls.Add(btnTelaChamada);
             Controls.Add(label6);
             Controls.Add(btnViagem);
-            Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(comboBoxFormaPagamento);
             Controls.Add(listViewCarrinho);
@@ -533,9 +533,9 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -569,7 +569,6 @@
         private ColumnHeader columnHeader8;
         private ComboBox comboBoxFormaPagamento;
         private Label label5;
-        private PictureBox pictureBox1;
         private Button button1;
         private CheckBox btnViagem;
         private Label label6;
@@ -578,5 +577,6 @@
         private Button button2;
         private Button btnTelaChamada;
         private Button button3;
+        private PictureBox pictureBox4;
     }
 }

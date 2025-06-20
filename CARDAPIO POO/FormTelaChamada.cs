@@ -51,8 +51,7 @@ namespace CARDAPIO_POO
             ListViewItem itemfinalizado = new ListViewItem(pedidoselecionado.Nome);
             itemfinalizado.Tag = pedidoselecionado;
             listViewPedidosProntos.Items.Add(itemfinalizado);
-
-            
+            listViewPedidoPreparando.Items.Remove(itemselecionado);
         }
     }
 }

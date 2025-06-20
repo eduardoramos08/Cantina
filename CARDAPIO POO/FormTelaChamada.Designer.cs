@@ -37,14 +37,16 @@
             columnHeader1 = new ColumnHeader();
             btnMarcarConcluido = new Button();
             pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label1.Location = new Point(253, 79);
+            label1.Location = new Point(250, 150);
             label1.Name = "label1";
             label1.Size = new Size(166, 36);
             label1.TabIndex = 2;
@@ -54,7 +56,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label2.Location = new Point(575, 79);
+            label2.Location = new Point(572, 150);
             label2.Name = "label2";
             label2.Size = new Size(263, 36);
             label2.TabIndex = 3;
@@ -68,7 +70,7 @@
             listViewPedidosProntos.ForeColor = Color.Black;
             listViewPedidosProntos.FullRowSelect = true;
             listViewPedidosProntos.GridLines = true;
-            listViewPedidosProntos.Location = new Point(575, 131);
+            listViewPedidosProntos.Location = new Point(572, 202);
             listViewPedidosProntos.MultiSelect = false;
             listViewPedidosProntos.Name = "listViewPedidosProntos";
             listViewPedidosProntos.Size = new Size(355, 412);
@@ -89,7 +91,7 @@
             listViewPedidoPreparando.ForeColor = SystemColors.WindowText;
             listViewPedidoPreparando.FullRowSelect = true;
             listViewPedidoPreparando.GridLines = true;
-            listViewPedidoPreparando.Location = new Point(253, 131);
+            listViewPedidoPreparando.Location = new Point(250, 202);
             listViewPedidoPreparando.MultiSelect = false;
             listViewPedidoPreparando.Name = "listViewPedidoPreparando";
             listViewPedidoPreparando.Size = new Size(257, 412);
@@ -114,7 +116,7 @@
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(276, 619);
+            btnMarcarConcluido.Location = new Point(275, 667);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(163, 79);
             btnMarcarConcluido.TabIndex = 8;
@@ -125,17 +127,29 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.White;
-            pictureBox1.Location = new Point(251, 600);
+            pictureBox1.Location = new Point(250, 648);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(208, 119);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(27, 28);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(203, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 43;
+            pictureBox4.TabStop = false;
             // 
             // FormTelaChamada
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1225, 797);
+            Controls.Add(pictureBox4);
             Controls.Add(btnMarcarConcluido);
             Controls.Add(listViewPedidosProntos);
             Controls.Add(listViewPedidoPreparando);
@@ -146,6 +160,7 @@
             Text = "FormTelaChamada";
             Load += FormTelaChamada_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -159,5 +174,6 @@
         private ColumnHeader columnHeader1;
         private Button btnMarcarConcluido;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
     }
 }

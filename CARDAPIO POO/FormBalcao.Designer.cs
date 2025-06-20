@@ -39,12 +39,12 @@
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
-            pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // btnMarcarConcluido
@@ -58,7 +58,7 @@
             btnMarcarConcluido.FlatStyle = FlatStyle.Flat;
             btnMarcarConcluido.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnMarcarConcluido.ForeColor = Color.White;
-            btnMarcarConcluido.Location = new Point(72, 570);
+            btnMarcarConcluido.Location = new Point(73, 681);
             btnMarcarConcluido.Name = "btnMarcarConcluido";
             btnMarcarConcluido.Size = new Size(194, 98);
             btnMarcarConcluido.TabIndex = 2;
@@ -77,7 +77,7 @@
             btnVerDetalhes.FlatStyle = FlatStyle.Flat;
             btnVerDetalhes.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             btnVerDetalhes.ForeColor = Color.White;
-            btnVerDetalhes.Location = new Point(272, 570);
+            btnVerDetalhes.Location = new Point(273, 681);
             btnVerDetalhes.Name = "btnVerDetalhes";
             btnVerDetalhes.Size = new Size(194, 98);
             btnVerDetalhes.TabIndex = 3;
@@ -93,7 +93,7 @@
             listViewPedidos.ForeColor = SystemColors.WindowText;
             listViewPedidos.FullRowSelect = true;
             listViewPedidos.GridLines = true;
-            listViewPedidos.Location = new Point(28, 125);
+            listViewPedidos.Location = new Point(29, 236);
             listViewPedidos.Name = "listViewPedidos";
             listViewPedidos.Size = new Size(666, 391);
             listViewPedidos.TabIndex = 4;
@@ -123,7 +123,7 @@
             listViewFinalizados.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             listViewFinalizados.FullRowSelect = true;
             listViewFinalizados.GridLines = true;
-            listViewFinalizados.Location = new Point(746, 125);
+            listViewFinalizados.Location = new Point(747, 236);
             listViewFinalizados.Name = "listViewFinalizados";
             listViewFinalizados.Size = new Size(665, 391);
             listViewFinalizados.TabIndex = 5;
@@ -146,22 +146,11 @@
             columnHeader6.Text = "Data e Hora";
             columnHeader6.Width = 280;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2025_05_20_223613_removebg_preview;
-            pictureBox1.Location = new Point(1106, 570);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 94);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 27;
-            pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label1.Location = new Point(179, 69);
+            label1.Location = new Point(180, 180);
             label1.Name = "label1";
             label1.Size = new Size(264, 36);
             label1.TabIndex = 28;
@@ -172,7 +161,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
-            label2.Location = new Point(851, 69);
+            label2.Location = new Point(852, 180);
             label2.Name = "label2";
             label2.Size = new Size(243, 36);
             label2.TabIndex = 29;
@@ -181,22 +170,33 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(28, 540);
+            pictureBox2.Location = new Point(29, 651);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(467, 161);
             pictureBox2.TabIndex = 30;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(29, 31);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(203, 70);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 43;
+            pictureBox4.TabStop = false;
+            // 
             // FormBalcao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 241, 238);
-            ClientSize = new Size(1435, 724);
+            ClientSize = new Size(1435, 848);
+            Controls.Add(pictureBox4);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(pictureBox1);
             Controls.Add(listViewFinalizados);
             Controls.Add(listViewPedidos);
             Controls.Add(btnVerDetalhes);
@@ -205,8 +205,8 @@
             Name = "FormBalcao";
             Text = "FormBalcao";
             Load += FormBalcao_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,7 +216,6 @@
         private Button btnVerDetalhes;
         private ListView listViewPedidos;
         private ListView listViewFinalizados;
-        private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
         private ColumnHeader columnHeader1;
@@ -226,5 +225,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
     }
 }
