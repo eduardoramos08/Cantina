@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CARDAPIO POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9811612f9f526f439880af01183ab1c38a7ca2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b19327eeaedca35fb472891648088fd24d7bb978")]
 [assembly: System.Reflection.AssemblyProductAttribute("CARDAPIO POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CARDAPIO POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

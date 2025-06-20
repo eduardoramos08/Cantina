@@ -165,7 +165,6 @@ F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO POO.runtimecon
 F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO POO.dll
 F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO POO.pdb
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Form1.resources
-F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Form2.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormBalcao.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Properties.Resources.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO POO.csproj.GenerateResource.cache
@@ -183,3 +182,4 @@ C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormTelaChamada.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormCozinha.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormTelaChamada.resources
+F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormEstoque.resources
