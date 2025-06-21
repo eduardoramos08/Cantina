@@ -183,3 +183,5 @@ C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormCozinha.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormTelaChamada.resources
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormEstoque.resources
+F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\cardapio.txt
+F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\estoque.txt

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,34 +26,46 @@ namespace CARDAPIO_POO
             quantidadeTxt.Text = "1";
             quantidadeTxt.Focus();
 
-            var produtosNoEstoque = new List<Estoque>
-    {
-        new Estoque { Codigo = 1, Descricao = "Pão de queijo", DataValidade = "30/06", Quantidade = 20, Preco = 6, Custo = 4.00m },
-        new Estoque { Codigo = 2, Descricao = "Coxinha", DataValidade = "30/06", Quantidade = 20, Preco = 5, Custo = 2.50m },
-        new Estoque { Codigo = 3, Descricao = "Risole", DataValidade = "30/06", Quantidade = 20, Preco = 4, Custo = 2.50m },
-        new Estoque { Codigo = 4, Descricao = "Esfiha de calabresa", DataValidade = "30/06", Quantidade = 20, Preco = 4.00m, Custo = 2.5m },
-        new Estoque { Codigo = 5, Descricao = "Pastel de carne", DataValidade = "30/06", Quantidade = 20, Preco = 6.00m, Custo = 4.00m },
-        new Estoque { Codigo = 6, Descricao = "Pastel de queijo", DataValidade = "30/06", Quantidade = 20, Preco = 6.50m, Custo = 4.50m },
-        new Estoque { Codigo = 7, Descricao = "Hambúrguer simples", DataValidade = "30/06", Quantidade = 20, Preco = 8.00m, Custo = 5.00m },
-        new Estoque { Codigo = 8, Descricao = "Hambúrguer com queijo", DataValidade = "30/06", Quantidade = 20, Preco = 9.00m, Custo = 6.00m },
-        new Estoque { Codigo = 9, Descricao = "X - Tudo", DataValidade = "30/06", Quantidade = 20, Preco = 12.00m, Custo = 7.00m }
-    };
+            List<Estoque> produtosEstoque = new List<Estoque>();
 
-            foreach (Estoque produtos in produtosNoEstoque)
+            if (File.Exists("estoque.txt"))
             {
-                ListViewItem item = new ListViewItem(produtos.Codigo.ToString());
-                item.SubItems.Add(produtos.Descricao);
-                item.SubItems.Add(produtos.DataValidade);
-                item.SubItems.Add(produtos.Quantidade.ToString());
-                item.SubItems.Add(produtos.Preco.ToString("F2"));
-                item.SubItems.Add(produtos.Custo.ToString("F2"));
+                var linhasDoArquivo = File.ReadLines("estoque.txt");
 
-                item.Tag = produtos;
-                listViewEstoque.Items.Add(item);
+                foreach (var linha in linhasDoArquivo)
+                {
+                    var colunasDoListView = linha.Split(';');
+
+                    if (colunasDoListView.Length >= 5)
+                    {
+                        Estoque produtosNoEstoque = new Estoque
+                        {
+                            Codigo = int.Parse(colunasDoListView[0]),
+                            Descricao = colunasDoListView[1],
+                            DataValidade = colunasDoListView[2],
+                            Quantidade = int.Parse(colunasDoListView[3]),
+                            Preco = decimal.Parse(colunasDoListView[4], CultureInfo.InvariantCulture),
+                            Custo = decimal.Parse(colunasDoListView[5], CultureInfo.InvariantCulture),
+                        };
+
+                        produtosEstoque.Add(produtosNoEstoque);
+
+                        ListViewItem item = new ListViewItem(produtosNoEstoque.Codigo.ToString());
+                        item.SubItems.Add(produtosNoEstoque.Descricao);
+                        item.SubItems.Add(produtosNoEstoque.DataValidade);
+                        item.SubItems.Add(produtosNoEstoque.Quantidade.ToString());
+                        item.SubItems.Add(produtosNoEstoque.Preco.ToString("F2"));
+                        item.SubItems.Add(produtosNoEstoque.Custo.ToString("F2"));
+
+                        listViewEstoque.Items.Add(item);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Arquivo estoque.txt não encontrado!");
             }
         }
-
-
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             if (listViewEstoque.SelectedItems.Count == 0)

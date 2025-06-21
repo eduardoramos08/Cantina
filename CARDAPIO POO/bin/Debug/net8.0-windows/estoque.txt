@@ -1,0 +1,9 @@
+1;Pão de queijo;30/06;20;3.50;1.50
+2;Coxinha;30/06;20;5;2.50
+3;Risole;30/06;20;4;2.50
+4;Esfiha de calabresa;30/06;20;4.00;2.50
+5;Pastel de carne;30/06;20;6.00;4.00
+6;Pastel de queijo;30/06;20;5.50;4.50
+7;Hambúrguer simples;30/06;20;8.00;5.00
+8;Hambúrguer com queijo;30/06;20;9.00;6.00
+9;X - Tudo;30/06;20;12.00;7.00
