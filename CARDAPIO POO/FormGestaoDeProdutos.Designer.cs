@@ -61,6 +61,7 @@
             label6 = new Label();
             label7 = new Label();
             salvarBtn = new Button();
+            isChapa = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -362,11 +363,22 @@
             salvarBtn.UseVisualStyleBackColor = true;
             salvarBtn.Click += salvarBtn_Click;
             // 
+            // isChapa
+            // 
+            isChapa.AutoSize = true;
+            isChapa.Location = new Point(778, 809);
+            isChapa.Name = "isChapa";
+            isChapa.Size = new Size(67, 19);
+            isChapa.TabIndex = 63;
+            isChapa.Text = "é chapa";
+            isChapa.UseVisualStyleBackColor = true;
+            // 
             // FormGestaoDeProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1852, 963);
+            Controls.Add(isChapa);
             Controls.Add(salvarBtn);
             Controls.Add(label6);
             Controls.Add(label7);
@@ -432,5 +444,6 @@
         private Label label6;
         private Label label7;
         private Button salvarBtn;
+        private CheckBox isChapa;
     }
 }

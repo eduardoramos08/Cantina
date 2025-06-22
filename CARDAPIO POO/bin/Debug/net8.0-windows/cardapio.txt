@@ -10,3 +10,5 @@
 10;Suco natural (300ml);20;4;false
 11;Refrigerante Lata;20;4.5;false
 12;Água mineral (500ml);20;2.5;false
+
+13;arroz;20;10;false

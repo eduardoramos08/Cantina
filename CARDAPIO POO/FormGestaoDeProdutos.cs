@@ -17,6 +17,10 @@ namespace CARDAPIO_POO
         {
             InitializeComponent();
         }
+        List<Produto> listaProdutosCardapio = new List<Produto>();
+        List<Estoque> produtosEstoque = new List<Estoque>();
+
+
         private void listViewCardapio_Click(object sender, EventArgs e)
         {
             listViewEstoque.SelectedItems.Clear();
@@ -26,19 +30,19 @@ namespace CARDAPIO_POO
         {
             listViewCardapio.SelectedItems.Clear();
         }
-        private void FormGestaoDeProdutos_Load(object sender, EventArgs e)
+        public void CarregarCardapio(ListView listViewCardapio, List<Produto> listaProdutosCardapio)
         {
-
-            List<Estoque> produtosEstoque = new List<Estoque>();
-            List<Produto> listaProdutosCardapio = new List<Produto>();
-
+            listaProdutosCardapio.Clear();
+            listViewCardapio.Items.Clear();
 
             if (File.Exists("cardapio.txt"))
             {
                 var linhas = File.ReadAllLines("cardapio.txt");
+
                 foreach (var linha in linhas)
                 {
                     var colunas = linha.Split(';');
+
                     if (colunas.Length == 5)
                     {
                         Produto produto = new Produto
@@ -49,7 +53,16 @@ namespace CARDAPIO_POO
                             Preco = decimal.Parse(colunas[3], CultureInfo.InvariantCulture),
                             IsChapa = bool.Parse(colunas[4])
                         };
+
                         listaProdutosCardapio.Add(produto);
+
+                        ListViewItem item = new ListViewItem(produto.Codigo.ToString());
+                        item.SubItems.Add(produto.Descricao);
+                        item.SubItems.Add(produto.Quantidade.ToString());
+                        item.SubItems.Add(produto.Preco.ToString("F2"));
+                        item.Tag = produto;
+
+                        listViewCardapio.Items.Add(item);
                     }
                 }
             }
@@ -57,45 +70,41 @@ namespace CARDAPIO_POO
             {
                 MessageBox.Show("Arquivo cardapio.txt não encontrado.");
             }
-
-            foreach (var produto in listaProdutosCardapio)
-            {
-                ListViewItem item = new ListViewItem(produto.Codigo.ToString());
-                item.SubItems.Add(produto.Descricao);
-                item.SubItems.Add(produto.Quantidade.ToString());
-                item.SubItems.Add(produto.Preco.ToString("F2"));
-                item.Tag = produto;
-                listViewCardapio.Items.Add(item);
-            }
+        }
+            public void CarregarEstoque(ListView listViewEstoque, List<Estoque> produtosEstoque)
+        {
+            produtosEstoque.Clear();
+            listViewEstoque.Items.Clear();
 
             if (File.Exists("estoque.txt"))
             {
-                var linhasDoArquivo = File.ReadLines("estoque.txt");
+                var linhas = File.ReadAllLines("estoque.txt");
 
-                foreach (var linha in linhasDoArquivo)
+                foreach (var linha in linhas)
                 {
-                    var colunasDoListView = linha.Split(';');
+                    var colunas = linha.Split(';');
 
-                    if (colunasDoListView.Length >= 5)
+                    if (colunas.Length >= 6)
                     {
-                        Estoque produtosNoEstoque = new Estoque
+                        Estoque produto = new Estoque
                         {
-                            Codigo = int.Parse(colunasDoListView[0]),
-                            Descricao = colunasDoListView[1],
-                            DataValidade = colunasDoListView[2],
-                            Quantidade = int.Parse(colunasDoListView[3]),
-                            Preco = decimal.Parse(colunasDoListView[4], CultureInfo.InvariantCulture),
-                            Custo = decimal.Parse(colunasDoListView[5], CultureInfo.InvariantCulture),
+                            Codigo = int.Parse(colunas[0]),
+                            Descricao = colunas[1],
+                            DataValidade = colunas[2],
+                            Quantidade = int.Parse(colunas[3]),
+                            Preco = decimal.Parse(colunas[4], CultureInfo.InvariantCulture),
+                            Custo = decimal.Parse(colunas[5], CultureInfo.InvariantCulture),
                         };
 
-                        produtosEstoque.Add(produtosNoEstoque);
+                        produtosEstoque.Add(produto);
 
-                        ListViewItem item = new ListViewItem(produtosNoEstoque.Codigo.ToString());
-                        item.SubItems.Add(produtosNoEstoque.Descricao);
-                        item.SubItems.Add(produtosNoEstoque.DataValidade);
-                        item.SubItems.Add(produtosNoEstoque.Quantidade.ToString());
-                        item.SubItems.Add(produtosNoEstoque.Preco.ToString("F2"));
-                        item.SubItems.Add(produtosNoEstoque.Custo.ToString("F2"));
+                        ListViewItem item = new ListViewItem(produto.Codigo.ToString());
+                        item.SubItems.Add(produto.Descricao);
+                        item.SubItems.Add(produto.DataValidade);
+                        item.SubItems.Add(produto.Quantidade.ToString());
+                        item.SubItems.Add(produto.Preco.ToString("F2"));
+                        item.SubItems.Add(produto.Custo.ToString("F2"));
+                        item.Tag = produto;
 
                         listViewEstoque.Items.Add(item);
                     }
@@ -107,6 +116,12 @@ namespace CARDAPIO_POO
             }
         }
 
+        private void FormGestaoDeProdutos_Load(object sender, EventArgs e)
+        {
+            CarregarCardapio(listViewCardapio, listaProdutosCardapio);
+            CarregarEstoque(listViewEstoque, produtosEstoque);
+
+        }
         private void listViewCardapio_SelectedIndexChanged(object sender, EventArgs e)
         {
             listViewEstoque.SelectedItems.Clear();
@@ -293,7 +308,7 @@ namespace CARDAPIO_POO
                 return;
             }
 
-            foreach (ListViewItem produto in listViewCardapio.Items)
+            foreach (ListViewItem produto in listViewEstoque.Items)
             {
                 if (produto.SubItems[0].Text == CodigoTxt.Text)
                 {
@@ -314,8 +329,29 @@ namespace CARDAPIO_POO
 
         private void salvarBtn_Click(object sender, EventArgs e)
         {
-            
+            string caminhoDoArquivo = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+            string localProdutosCardapio = Path.Combine(caminhoDoArquivo, "cardapio.txt");
+            string localProdutosEstoque = Path.Combine(caminhoDoArquivo, "estoque.txt");
+            string ischapa = isChapa.Checked.ToString().ToLower();
 
+            if (isChapa.CheckState == CheckState.Checked)
+            {
+                string NovaLinhaCardapio = $"{CodigoTxt.Text};{DescricaoTxt.Text};{QuantidadeTxt.Text};{PrecoTxt.Text};true";
+                File.AppendAllLines(localProdutosCardapio, new[] { NovaLinhaCardapio });
+            }
+
+            else 
+            {
+                string NovaLinhaCardapio = $"{CodigoTxt.Text};{DescricaoTxt.Text};{QuantidadeTxt.Text};{PrecoTxt.Text};false";
+                File.AppendAllLines(localProdutosCardapio, new[] { NovaLinhaCardapio });
+            }
+
+            string novaLinhaEstoque = $"{CodigoTxt.Text};{DescricaoTxt.Text};{DataValidadeTxt.Text};{QuantidadeTxt.Text};{PrecoTxt.Text};{CustoTxt.Text}";
+            File.AppendAllLines(localProdutosEstoque, new[] { novaLinhaEstoque });
+
+            MessageBox.Show("Dados foram salvos");
+
+            
         }
     }
 }
