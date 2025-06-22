@@ -7,3 +7,6 @@
 7;Hambúrguer simples;30/06;20;8.00;5.00
 8;Hambúrguer com queijo;30/06;20;9.00;6.00
 9;X - Tudo;30/06;20;12.00;7.00
+10;Suco natural (300ml);25/08;20;4.00;2.5
+11;Refrigerante Lata;25/08;20;4.5;3.00
+12;Água mineral (500ml);25/12;20;2.5;1.00

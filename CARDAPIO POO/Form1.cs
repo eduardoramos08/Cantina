@@ -427,4 +427,10 @@ public partial class Form1 : Form
         FormEstoque formestoque = new FormEstoque();
         formestoque.ShowDialog();
     }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+        FormGestaoDeProdutos formGestaoDePedidos = new FormGestaoDeProdutos();
+        formGestaoDePedidos.ShowDialog();
+    }
 }

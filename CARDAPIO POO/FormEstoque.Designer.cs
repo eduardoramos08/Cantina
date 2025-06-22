@@ -44,6 +44,7 @@ namespace CARDAPIO_POO
             pictureBox3 = new PictureBox();
             label1 = new Label();
             pictureBox4 = new PictureBox();
+            cardapioTxt = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
@@ -183,11 +184,22 @@ namespace CARDAPIO_POO
             pictureBox4.TabIndex = 43;
             pictureBox4.TabStop = false;
             // 
+            // cardapioTxt
+            // 
+            cardapioTxt.AutoSize = true;
+            cardapioTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            cardapioTxt.Location = new Point(363, 125);
+            cardapioTxt.Name = "cardapioTxt";
+            cardapioTxt.Size = new Size(115, 36);
+            cardapioTxt.TabIndex = 44;
+            cardapioTxt.Text = "Estoque";
+            // 
             // FormEstoque
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1416, 822);
+            Controls.Add(cardapioTxt);
             Controls.Add(pictureBox4);
             Controls.Add(label1);
             Controls.Add(btnRemover);
@@ -226,5 +238,6 @@ namespace CARDAPIO_POO
         private PictureBox pictureBox3;
         private Label label1;
         private PictureBox pictureBox4;
+        private Label cardapioTxt;
     }
 }

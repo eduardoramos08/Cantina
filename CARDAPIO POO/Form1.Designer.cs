@@ -65,6 +65,7 @@
             btnTelaChamada = new Button();
             button3 = new Button();
             pictureBox4 = new PictureBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -493,6 +494,24 @@
             pictureBox4.TabIndex = 42;
             pictureBox4.TabStop = false;
             // 
+            // button4
+            // 
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(1124, 799);
+            button4.Name = "button4";
+            button4.Size = new Size(185, 82);
+            button4.TabIndex = 43;
+            button4.Text = "Tela de Gestão ";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -500,6 +519,7 @@
             BackColor = Color.FromArgb(243, 241, 238);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1924, 893);
+            Controls.Add(button4);
             Controls.Add(pictureBox4);
             Controls.Add(button3);
             Controls.Add(btnTelaChamada);
@@ -578,5 +598,6 @@
         private Button btnTelaChamada;
         private Button button3;
         private PictureBox pictureBox4;
+        private Button button4;
     }
 }
