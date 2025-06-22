@@ -28,7 +28,7 @@ namespace CARDAPIO_POO
         }
         private void FormGestaoDeProdutos_Load(object sender, EventArgs e)
         {
-            
+
             List<Estoque> produtosEstoque = new List<Estoque>();
             List<Produto> listaProdutosCardapio = new List<Produto>();
 
@@ -255,9 +255,9 @@ namespace CARDAPIO_POO
 
             ListViewItem item = new ListViewItem(codigo.ToString());
             item.SubItems.Add(DescricaoTxt.Text);
-            item.SubItems.Add(quantidade.ToString("N0")); 
-            item.SubItems.Add(preco.ToString("N2"));      
-            item.SubItems.Add("False");                   
+            item.SubItems.Add(quantidade.ToString("N0"));
+            item.SubItems.Add(preco.ToString("N2"));
+            item.SubItems.Add("False");
 
             listViewCardapio.Items.Add(item);
         }
@@ -315,7 +315,7 @@ namespace CARDAPIO_POO
         private void salvarBtn_Click(object sender, EventArgs e)
         {
             
+
         }
     }
-    
 }

@@ -19,52 +19,52 @@ namespace CARDAPIO_POO
             InitializeComponent();
         }
 
-
-
-        private void FormEstoque_Load(object sender, EventArgs e)
+        private void CarregarEstoque()
         {
-            quantidadeTxt.Text = "1";
-            quantidadeTxt.Focus();
-
-            List<Estoque> produtosEstoque = new List<Estoque>();
+            listViewEstoque.Items.Clear();
 
             if (File.Exists("estoque.txt"))
             {
-                var linhasDoArquivo = File.ReadLines("estoque.txt");
-
-                foreach (var linha in linhasDoArquivo)
+                var linhas = File.ReadAllLines("estoque.txt");
+                foreach (var linha in linhas)
                 {
-                    var colunasDoListView = linha.Split(';');
-
-                    if (colunasDoListView.Length >= 5)
+                    var colunas = linha.Split(';');
+                    if (colunas.Length >= 6)
                     {
-                        Estoque produtosNoEstoque = new Estoque
+                        Estoque produto = new Estoque
                         {
-                            Codigo = int.Parse(colunasDoListView[0]),
-                            Descricao = colunasDoListView[1],
-                            DataValidade = colunasDoListView[2],
-                            Quantidade = int.Parse(colunasDoListView[3]),
-                            Preco = decimal.Parse(colunasDoListView[4], CultureInfo.InvariantCulture),
-                            Custo = decimal.Parse(colunasDoListView[5], CultureInfo.InvariantCulture),
+                            Codigo = int.Parse(colunas[0]),
+                            Descricao = colunas[1],
+                            DataValidade = colunas[2],
+                            Quantidade = int.Parse(colunas[3]),
+                            Preco = decimal.Parse(colunas[4], CultureInfo.InvariantCulture),
+                            Custo = decimal.Parse(colunas[5], CultureInfo.InvariantCulture)
                         };
 
-                        produtosEstoque.Add(produtosNoEstoque);
+                        ListViewItem item = new ListViewItem(produto.Codigo.ToString());
+                        item.SubItems.Add(produto.Descricao);
+                        item.SubItems.Add(produto.DataValidade);
+                        item.SubItems.Add(produto.Quantidade.ToString());
+                        item.SubItems.Add(produto.Preco.ToString("F2"));
+                        item.SubItems.Add(produto.Custo.ToString("F2"));
 
-                        ListViewItem item = new ListViewItem(produtosNoEstoque.Codigo.ToString());
-                        item.SubItems.Add(produtosNoEstoque.Descricao);
-                        item.SubItems.Add(produtosNoEstoque.DataValidade);
-                        item.SubItems.Add(produtosNoEstoque.Quantidade.ToString());
-                        item.SubItems.Add(produtosNoEstoque.Preco.ToString("F2"));
-                        item.SubItems.Add(produtosNoEstoque.Custo.ToString("F2"));
-
+                        item.Tag = produto;
                         listViewEstoque.Items.Add(item);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Arquivo estoque.txt não encontrado!");
+                MessageBox.Show("Arquivo estoque.txt não encontrado.");
             }
+        }
+
+
+        private void FormEstoque_Load(object sender, EventArgs e)
+        {
+            quantidadeTxt.Text = "1";
+            quantidadeTxt.Focus();
+            CarregarEstoque();
         }
         private void btnAdicionar_Click(object sender, EventArgs e)
         {

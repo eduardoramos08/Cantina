@@ -23,42 +23,7 @@ public partial class Form1 : Form
         comboBoxFormaPagamento.SelectedIndex = 3;
         quantidadeTxt.Text = "1";
 
-        List<Produto> listaProdutosCardapio = new List<Produto>();
-
-        if (File.Exists("cardapio.txt"))
-        {
-            var linhas = File.ReadAllLines("cardapio.txt");
-            foreach (var linha in linhas)
-            {
-                var colunas = linha.Split(';');
-                if (colunas.Length == 5)
-                {
-                    Produto produto = new Produto
-                    {
-                        Codigo = int.Parse(colunas[0]),
-                        Descricao = colunas[1],
-                        Quantidade = int.Parse(colunas[2]),
-                        Preco = decimal.Parse(colunas[3], CultureInfo.InvariantCulture),
-                        IsChapa = bool.Parse(colunas[4])
-                    };
-                    listaProdutosCardapio.Add(produto);
-                }
-            }
-        }
-        else
-        {
-            MessageBox.Show("Arquivo cardapio.txt não encontrado.");
-        }
-
-        foreach (var produto in listaProdutosCardapio)
-        {
-            ListViewItem item = new ListViewItem(produto.Codigo.ToString());
-            item.SubItems.Add(produto.Descricao);
-            item.SubItems.Add(produto.Quantidade.ToString());
-            item.SubItems.Add(produto.Preco.ToString("F2"));
-            item.Tag = produto;
-            listViewCardapio.Items.Add(item);
-        }
+        CarregarCardapio();
     }
 
 
@@ -264,6 +229,8 @@ public partial class Form1 : Form
         Repositorio.listaPedidos.Add(pedido);
         produtos1 = new List<ItemPedido>();
         LimparCampos();
+        SalvarCardapio();   
+
     }
 
     private void quantidadeTxt_TextChanged(object sender, EventArgs e)
@@ -432,5 +399,65 @@ public partial class Form1 : Form
     {
         FormGestaoDeProdutos formGestaoDePedidos = new FormGestaoDeProdutos();
         formGestaoDePedidos.ShowDialog();
+        CarregarCardapio();
     }
+
+    private void CarregarCardapio()
+    {
+        listViewCardapio.Items.Clear();
+
+        if (File.Exists("cardapio.txt"))
+        {
+            var linhas = File.ReadAllLines("cardapio.txt");
+            foreach (var linha in linhas)
+            {
+                var colunas = linha.Split(';');
+                if (colunas.Length == 5)
+                {
+                    Produto produto = new Produto
+                    {
+                        Codigo = int.Parse(colunas[0]),
+                        Descricao = colunas[1],
+                        Quantidade = int.Parse(colunas[2]),
+                        Preco = decimal.Parse(colunas[3], CultureInfo.InvariantCulture),
+                        IsChapa = bool.Parse(colunas[4])
+                    };
+
+                    ListViewItem item = new ListViewItem(produto.Codigo.ToString());
+                    item.SubItems.Add(produto.Descricao);
+                    item.SubItems.Add(produto.Quantidade.ToString());
+                    item.SubItems.Add(produto.Preco.ToString("F2"));
+                    item.Tag = produto;
+                    listViewCardapio.Items.Add(item);
+                }
+            }
+        }
+        else
+        {
+            MessageBox.Show("Arquivo cardapio.txt não encontrado.");
+        }
+    }
+
+        private void SalvarCardapio()
+        {
+            List<string> linhas = new List<string>();
+
+            foreach (ListViewItem item in listViewCardapio.Items)
+            {
+                var produto = (Produto)item.Tag;
+                string linha = string.Join(";",
+                    produto.Codigo,
+                    produto.Descricao,
+                    produto.Quantidade,
+                    produto.Preco.ToString(CultureInfo.InvariantCulture),
+                    produto.IsChapa.ToString()
+                );
+                linhas.Add(linha);
+            }
+
+            File.WriteAllLines("cardapio.txt", linhas);
+        }
+
 }
+
+
