@@ -37,8 +37,8 @@ namespace CARDAPIO_POO
                             Descricao = colunas[1],
                             DataValidade = colunas[2],
                             Quantidade = int.Parse(colunas[3]),
-                            Preco = decimal.Parse(colunas[4], CultureInfo.InvariantCulture),
-                            Custo = decimal.Parse(colunas[5], CultureInfo.InvariantCulture)
+                            Preco = decimal.Parse(colunas[4].Replace(",", "."), CultureInfo.InvariantCulture),
+                            Custo = decimal.Parse(colunas[5].Replace(",", "."), CultureInfo.InvariantCulture)
                         };
 
                         ListViewItem item = new ListViewItem(produto.Codigo.ToString());
@@ -66,7 +66,9 @@ namespace CARDAPIO_POO
             quantidadeTxt.Focus();
             CarregarEstoque();
         }
-        private void btnAdicionar_Click(object sender, EventArgs e)
+
+
+        private void btnAdicionar_Click_1(object sender, EventArgs e)
         {
             if (listViewEstoque.SelectedItems.Count == 0)
             {
@@ -92,11 +94,9 @@ namespace CARDAPIO_POO
             {
                 MessageBox.Show($"Estoque do {produtoDoEstoque.Descricao} está acabando!");
             }
-
-
         }
 
-        private void btnRemover_Click(object sender, EventArgs e)
+        private void btnRemover_Click_1(object sender, EventArgs e)
         {
             if (listViewEstoque.SelectedItems.Count == 0)
             {
@@ -122,8 +122,36 @@ namespace CARDAPIO_POO
             {
                 MessageBox.Show($"Estoque do {produtoDoEstoque.Descricao} está acabando!");
             }
-
-
         }
+
+
+        private void salvarBtn_Click(object sender, EventArgs e)
+        {
+            string caminhoDoArquivo = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+            string localProdutosEstoque = Path.Combine(caminhoDoArquivo, "estoque.txt");
+
+            using (StreamWriter writer = new StreamWriter(localProdutosEstoque, false))
+            {
+                foreach (ListViewItem item in listViewEstoque.Items)
+                {
+                    string codigo = item.SubItems[0].Text;
+                    string descricao = item.SubItems[1].Text;
+                    string dataValidade = item.SubItems[2].Text;
+                    string quantidade = item.SubItems[3].Text;
+
+                    string preco = item.SubItems[4].Text.Replace(",", ".");
+                    string custo = item.SubItems[5].Text.Replace(",", ".");
+
+                    string linha = $"{codigo};{descricao};{dataValidade};{quantidade};{preco};{custo}";
+                    writer.WriteLine(linha);
+                }
+            }
+
+            MessageBox.Show("Alterações salvas com sucesso.");
+        }
+
+
+
     }
 }
+

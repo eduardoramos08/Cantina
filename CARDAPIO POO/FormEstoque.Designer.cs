@@ -45,6 +45,7 @@ namespace CARDAPIO_POO
             label1 = new Label();
             pictureBox4 = new PictureBox();
             cardapioTxt = new Label();
+            salvarBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
@@ -113,6 +114,7 @@ namespace CARDAPIO_POO
             btnRemover.TabIndex = 35;
             btnRemover.Text = "Remover";
             btnRemover.UseVisualStyleBackColor = false;
+            btnRemover.Click += btnRemover_Click_1;
             // 
             // btnAdicionar
             // 
@@ -131,6 +133,7 @@ namespace CARDAPIO_POO
             btnAdicionar.TabIndex = 34;
             btnAdicionar.Text = "Adicionar";
             btnAdicionar.UseVisualStyleBackColor = false;
+            btnAdicionar.Click += btnAdicionar_Click_1;
             // 
             // quantidadeTxt
             // 
@@ -194,11 +197,30 @@ namespace CARDAPIO_POO
             cardapioTxt.TabIndex = 44;
             cardapioTxt.Text = "Estoque";
             // 
+            // salvarBtn
+            // 
+            salvarBtn.BackgroundImage = (Image)resources.GetObject("salvarBtn.BackgroundImage");
+            salvarBtn.BackgroundImageLayout = ImageLayout.Stretch;
+            salvarBtn.FlatAppearance.BorderSize = 0;
+            salvarBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
+            salvarBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
+            salvarBtn.FlatStyle = FlatStyle.Flat;
+            salvarBtn.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
+            salvarBtn.ForeColor = Color.White;
+            salvarBtn.Location = new Point(1207, 728);
+            salvarBtn.Name = "salvarBtn";
+            salvarBtn.Size = new Size(185, 82);
+            salvarBtn.TabIndex = 63;
+            salvarBtn.Text = "Salvar Tudo";
+            salvarBtn.UseVisualStyleBackColor = true;
+            salvarBtn.Click += salvarBtn_Click;
+            // 
             // FormEstoque
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1416, 822);
+            Controls.Add(salvarBtn);
             Controls.Add(cardapioTxt);
             Controls.Add(pictureBox4);
             Controls.Add(label1);
@@ -239,5 +261,6 @@ namespace CARDAPIO_POO
         private Label label1;
         private PictureBox pictureBox4;
         private Label cardapioTxt;
+        private Button salvarBtn;
     }
 }
