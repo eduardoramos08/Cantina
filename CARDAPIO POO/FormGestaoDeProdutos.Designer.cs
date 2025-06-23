@@ -62,17 +62,19 @@
             label7 = new Label();
             salvarBtn = new Button();
             isChapa = new CheckBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // listViewEstoque
             // 
             listViewEstoque.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listViewEstoque.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            listViewEstoque.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             listViewEstoque.FullRowSelect = true;
             listViewEstoque.GridLines = true;
-            listViewEstoque.Location = new Point(751, 172);
+            listViewEstoque.Location = new Point(651, 172);
             listViewEstoque.Name = "listViewEstoque";
             listViewEstoque.Size = new Size(976, 501);
             listViewEstoque.TabIndex = 1;
@@ -117,7 +119,7 @@
             // 
             listViewCardapio.BackColor = Color.White;
             listViewCardapio.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9, columnHeader10 });
-            listViewCardapio.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            listViewCardapio.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             listViewCardapio.ForeColor = Color.Black;
             listViewCardapio.FullRowSelect = true;
             listViewCardapio.GridLines = true;
@@ -167,10 +169,10 @@
             // cardapioTxt
             // 
             cardapioTxt.AutoSize = true;
-            cardapioTxt.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            cardapioTxt.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             cardapioTxt.Location = new Point(214, 118);
             cardapioTxt.Name = "cardapioTxt";
-            cardapioTxt.Size = new Size(129, 36);
+            cardapioTxt.Size = new Size(132, 31);
             cardapioTxt.TabIndex = 43;
             cardapioTxt.Text = "Cardápio";
             // 
@@ -193,7 +195,7 @@
             AdicionarcardapioBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
             AdicionarcardapioBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
             AdicionarcardapioBtn.FlatStyle = FlatStyle.Flat;
-            AdicionarcardapioBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            AdicionarcardapioBtn.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             AdicionarcardapioBtn.ForeColor = Color.White;
             AdicionarcardapioBtn.Location = new Point(216, 692);
             AdicionarcardapioBtn.Name = "AdicionarcardapioBtn";
@@ -206,10 +208,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Agrandir Narrow Bold", 20.25F, FontStyle.Bold);
+            label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold);
             label1.Location = new Point(-507, 106);
             label1.Name = "label1";
-            label1.Size = new Size(129, 36);
+            label1.Size = new Size(132, 31);
             label1.TabIndex = 45;
             label1.Text = "Cardápio";
             // 
@@ -221,7 +223,7 @@
             editarBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
             editarBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
             editarBtn.FlatStyle = FlatStyle.Flat;
-            editarBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            editarBtn.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             editarBtn.ForeColor = Color.White;
             editarBtn.Location = new Point(25, 690);
             editarBtn.Name = "editarBtn";
@@ -239,7 +241,7 @@
             adicionarEstoqueBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
             adicionarEstoqueBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
             adicionarEstoqueBtn.FlatStyle = FlatStyle.Flat;
-            adicionarEstoqueBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            adicionarEstoqueBtn.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             adicionarEstoqueBtn.ForeColor = Color.White;
             adicionarEstoqueBtn.Location = new Point(407, 692);
             adicionarEstoqueBtn.Name = "adicionarEstoqueBtn";
@@ -251,42 +253,42 @@
             // 
             // CodigoTxt
             // 
-            CodigoTxt.Location = new Point(837, 692);
+            CodigoTxt.Location = new Point(759, 772);
             CodigoTxt.Name = "CodigoTxt";
             CodigoTxt.Size = new Size(100, 23);
             CodigoTxt.TabIndex = 50;
             // 
             // DescricaoTxt
             // 
-            DescricaoTxt.Location = new Point(837, 725);
+            DescricaoTxt.Location = new Point(759, 805);
             DescricaoTxt.Name = "DescricaoTxt";
             DescricaoTxt.Size = new Size(100, 23);
             DescricaoTxt.TabIndex = 51;
             // 
             // DataValidadeTxt
             // 
-            DataValidadeTxt.Location = new Point(837, 754);
+            DataValidadeTxt.Location = new Point(759, 834);
             DataValidadeTxt.Name = "DataValidadeTxt";
             DataValidadeTxt.Size = new Size(100, 23);
             DataValidadeTxt.TabIndex = 52;
             // 
             // CustoTxt
             // 
-            CustoTxt.Location = new Point(1025, 750);
+            CustoTxt.Location = new Point(947, 830);
             CustoTxt.Name = "CustoTxt";
             CustoTxt.Size = new Size(100, 23);
             CustoTxt.TabIndex = 55;
             // 
             // PrecoTxt
             // 
-            PrecoTxt.Location = new Point(1025, 721);
+            PrecoTxt.Location = new Point(947, 801);
             PrecoTxt.Name = "PrecoTxt";
             PrecoTxt.Size = new Size(100, 23);
             PrecoTxt.TabIndex = 54;
             // 
             // QuantidadeTxt
             // 
-            QuantidadeTxt.Location = new Point(1025, 692);
+            QuantidadeTxt.Location = new Point(947, 772);
             QuantidadeTxt.Name = "QuantidadeTxt";
             QuantidadeTxt.Size = new Size(100, 23);
             QuantidadeTxt.TabIndex = 53;
@@ -294,7 +296,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(773, 725);
+            label2.BackColor = Color.White;
+            label2.Location = new Point(695, 805);
             label2.Name = "label2";
             label2.Size = new Size(58, 15);
             label2.TabIndex = 56;
@@ -303,7 +306,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(737, 762);
+            label3.BackColor = Color.White;
+            label3.Location = new Point(659, 842);
             label3.Name = "label3";
             label3.Size = new Size(94, 15);
             label3.TabIndex = 57;
@@ -312,7 +316,8 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(982, 726);
+            label4.BackColor = Color.White;
+            label4.Location = new Point(904, 806);
             label4.Name = "label4";
             label4.Size = new Size(37, 15);
             label4.TabIndex = 59;
@@ -321,7 +326,8 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(982, 757);
+            label5.BackColor = Color.White;
+            label5.Location = new Point(904, 837);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 58;
@@ -330,7 +336,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(950, 690);
+            label6.BackColor = Color.White;
+            label6.Location = new Point(872, 770);
             label6.Name = "label6";
             label6.Size = new Size(69, 15);
             label6.TabIndex = 61;
@@ -339,7 +346,8 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(785, 692);
+            label7.BackColor = Color.White;
+            label7.Location = new Point(707, 772);
             label7.Name = "label7";
             label7.Size = new Size(46, 15);
             label7.TabIndex = 60;
@@ -353,9 +361,9 @@
             salvarBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(243, 241, 238);
             salvarBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(243, 241, 238);
             salvarBtn.FlatStyle = FlatStyle.Flat;
-            salvarBtn.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
+            salvarBtn.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold);
             salvarBtn.ForeColor = Color.White;
-            salvarBtn.Location = new Point(1557, 717);
+            salvarBtn.Location = new Point(1442, 713);
             salvarBtn.Name = "salvarBtn";
             salvarBtn.Size = new Size(185, 82);
             salvarBtn.TabIndex = 62;
@@ -366,18 +374,29 @@
             // isChapa
             // 
             isChapa.AutoSize = true;
-            isChapa.Location = new Point(778, 809);
+            isChapa.BackColor = Color.White;
+            isChapa.Location = new Point(695, 876);
             isChapa.Name = "isChapa";
             isChapa.Size = new Size(67, 19);
             isChapa.TabIndex = 63;
             isChapa.Text = "é chapa";
-            isChapa.UseVisualStyleBackColor = true;
+            isChapa.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(651, 679);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(693, 281);
+            pictureBox3.TabIndex = 64;
+            pictureBox3.TabStop = false;
             // 
             // FormGestaoDeProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1852, 963);
+            ClientSize = new Size(1665, 984);
             Controls.Add(isChapa);
             Controls.Add(salvarBtn);
             Controls.Add(label6);
@@ -401,11 +420,13 @@
             Controls.Add(cardapioTxt);
             Controls.Add(listViewCardapio);
             Controls.Add(listViewEstoque);
+            Controls.Add(pictureBox3);
             Name = "FormGestaoDeProdutos";
             Text = "FormGestaoDePedidos";
             Load += FormGestaoDeProdutos_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -445,5 +466,6 @@
         private Label label7;
         private Button salvarBtn;
         private CheckBox isChapa;
+        private PictureBox pictureBox3;
     }
 }

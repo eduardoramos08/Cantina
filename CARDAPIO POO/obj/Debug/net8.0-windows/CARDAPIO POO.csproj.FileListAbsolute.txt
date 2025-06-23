@@ -145,7 +145,6 @@ C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO POO.dll
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\CARDAPIO POO.pdb
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Form1.resources
-C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Form2.resources
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormBalcao.resources
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.Properties.Resources.resources
 C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO POO.csproj.GenerateResource.cache
@@ -186,3 +185,7 @@ F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormEstoqu
 F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\cardapio.txt
 F:\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\estoque.txt
 F:\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormGestaoDeProdutos.resources
+C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\cardapio.txt
+C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\bin\Debug\net8.0-windows\estoque.txt
+C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormEstoque.resources
+C:\Users\25163062\Desktop\Cantina\CARDAPIO POO\obj\Debug\net8.0-windows\CARDAPIO_POO.FormGestaoDeProdutos.resources
