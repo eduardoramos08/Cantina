@@ -77,6 +77,7 @@
             listViewPedidosProntos.TabIndex = 7;
             listViewPedidosProntos.UseCompatibleStateImageBehavior = false;
             listViewPedidosProntos.View = View.Details;
+            listViewPedidosProntos.SelectedIndexChanged += listViewPedidosProntos_SelectedIndexChanged;
             // 
             // columnHeader4
             // 

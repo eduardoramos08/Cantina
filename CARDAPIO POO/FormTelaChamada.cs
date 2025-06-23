@@ -53,5 +53,10 @@ namespace CARDAPIO_POO
             listViewPedidosProntos.Items.Add(itemfinalizado);
             listViewPedidoPreparando.Items.Remove(itemselecionado);
         }
+
+        private void listViewPedidosProntos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

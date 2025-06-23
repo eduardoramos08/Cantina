@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "F:\\Desktop\\Cantina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formgestaodeprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formgestaodeprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|F:\\Desktop\\Cantina\\cardapio poo\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formestoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formtelachamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formtelachamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formcozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formcozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\formbalcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\formbalcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|f:\\desktop\\cantina\\cardapio poo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4753F2E8-B967-42DA-AD20-27CB779B5597}|CARDAPIO POO\\CARDAPIO POO.csproj|solutionrelative:cardapio poo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +34,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormEstoque.cs",
-              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormEstoque.cs",
-              "RelativeDocumentMoniker": "CARDAPIO POO\\FormEstoque.cs",
-              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormEstoque.cs",
-              "RelativeToolTip": "CARDAPIO POO\\FormEstoque.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACgAAABtAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\Form1.cs",
+              "RelativeDocumentMoniker": "CARDAPIO POO\\Form1.cs",
+              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\Form1.cs [Projeto]",
+              "RelativeToolTip": "CARDAPIO POO\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T18:55:01.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T19:06:43.086Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormBalcao.cs [Projeto]",
+              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormBalcao.cs",
+              "RelativeDocumentMoniker": "CARDAPIO POO\\FormBalcao.cs",
+              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormBalcao.cs [Projeto]",
+              "RelativeToolTip": "CARDAPIO POO\\FormBalcao.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T19:06:47.071Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCozinha.cs [Projeto]",
+              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormCozinha.cs",
+              "RelativeDocumentMoniker": "CARDAPIO POO\\FormCozinha.cs",
+              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormCozinha.cs [Projeto]",
+              "RelativeToolTip": "CARDAPIO POO\\FormCozinha.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T19:06:49.18Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormTelaChamada.cs [Projeto]",
+              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormTelaChamada.cs",
+              "RelativeDocumentMoniker": "CARDAPIO POO\\FormTelaChamada.cs",
+              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormTelaChamada.cs [Projeto]",
+              "RelativeToolTip": "CARDAPIO POO\\FormTelaChamada.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T19:06:53.823Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
@@ -42,7 +93,19 @@
               "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormEstoque.cs [Projeto]",
               "RelativeToolTip": "CARDAPIO POO\\FormEstoque.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T18:47:37.937Z",
+              "WhenOpened": "2025-06-23T19:06:52.044Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormGestaoDeProdutos.cs [Projeto]",
+              "DocumentMoniker": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormGestaoDeProdutos.cs",
+              "RelativeDocumentMoniker": "CARDAPIO POO\\FormGestaoDeProdutos.cs",
+              "ToolTip": "F:\\Desktop\\Cantina\\CARDAPIO POO\\FormGestaoDeProdutos.cs [Projeto]",
+              "RelativeToolTip": "CARDAPIO POO\\FormGestaoDeProdutos.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T19:06:54.736Z",
               "EditorCaption": " [Projeto]"
             }
           ]
