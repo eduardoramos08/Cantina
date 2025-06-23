@@ -1,13 +1,16 @@
-1;Pão de queijo;20;3.5;False
-2;Coxinha;25;5;False
-3;Risole;29;4;False
-4;Esfiha de calabresa;30;4;False
-5;Pastel de carne;25;6;True
-6;Pastel de queijo;35;5.5;True
-7;Hambúrguer simples;20;8;True
-8;Hambúrguer com queijo;19;9;True
-9;X - Tudo;23;12;True
-10;Suco natural (300ml);20;4;False
-11;Refrigerante Lata;20;4.5;False
-12;Água mineral (500ml);20;2.5;False
-13;batata;20;8;True
+1;Pão de queijo;20;3.5;false
+2;Coxinha;30;5;false
+3;Risole;30;4;false
+4;Esfiha de calabresa;30;4;false
+5;Pastel de carne;25;6;true
+6;Pastel de queijo;35;5.5;true
+7;Hambúrguer simples;20;8;true
+8;Hambúrguer com queijo;20;9;true
+9;X - Tudo;23;12;true
+10;Suco natural (300ml);20;4;false
+11;Refrigerante Lata;20;4.5;false
+12;Água mineral (500ml);20;2.5;false
+
+
+13;batata;20;8;true
+

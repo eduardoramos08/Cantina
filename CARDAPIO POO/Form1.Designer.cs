@@ -196,10 +196,11 @@
             // dinheiroRecebidoTxt
             // 
             dinheiroRecebidoTxt.BackColor = Color.Gainsboro;
+            dinheiroRecebidoTxt.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             dinheiroRecebidoTxt.ForeColor = Color.Black;
             dinheiroRecebidoTxt.Location = new Point(963, 398);
             dinheiroRecebidoTxt.Name = "dinheiroRecebidoTxt";
-            dinheiroRecebidoTxt.Size = new Size(134, 23);
+            dinheiroRecebidoTxt.Size = new Size(134, 32);
             dinheiroRecebidoTxt.TabIndex = 15;
             dinheiroRecebidoTxt.TextChanged += dinheiroRecebido_TextChanged;
             // 
@@ -233,13 +234,13 @@
             // 
             Troco.AutoSize = true;
             Troco.BackColor = Color.Gainsboro;
-            Troco.Font = new Font("Segoe UI", 13F);
+            Troco.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             Troco.ForeColor = Color.Black;
             Troco.Location = new Point(966, 466);
             Troco.Name = "Troco";
-            Troco.Size = new Size(131, 25);
+            Troco.Size = new Size(130, 24);
             Troco.TabIndex = 19;
-            Troco.Text = "_________________";
+            Troco.Text = "____________";
             Troco.Click += Troco_Click;
             // 
             // label4
@@ -257,9 +258,10 @@
             // nomeTxt
             // 
             nomeTxt.BackColor = Color.Gainsboro;
+            nomeTxt.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             nomeTxt.Location = new Point(966, 290);
             nomeTxt.Name = "nomeTxt";
-            nomeTxt.Size = new Size(134, 23);
+            nomeTxt.Size = new Size(134, 32);
             nomeTxt.TabIndex = 21;
             nomeTxt.TextChanged += nomeTxt_TextChanged;
             // 
@@ -347,10 +349,11 @@
             // 
             comboBoxFormaPagamento.BackColor = Color.Gainsboro;
             comboBoxFormaPagamento.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxFormaPagamento.Font = new Font("Inter Medium", 15F, FontStyle.Bold);
             comboBoxFormaPagamento.FormattingEnabled = true;
             comboBoxFormaPagamento.Location = new Point(966, 345);
             comboBoxFormaPagamento.Name = "comboBoxFormaPagamento";
-            comboBoxFormaPagamento.Size = new Size(134, 23);
+            comboBoxFormaPagamento.Size = new Size(134, 32);
             comboBoxFormaPagamento.TabIndex = 24;
             comboBoxFormaPagamento.SelectedIndexChanged += comboBoxFormaPagamento_SelectedIndexChanged;
             // 
